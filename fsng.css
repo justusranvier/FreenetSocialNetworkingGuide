@@ -1,0 +1,199 @@
+html {
+	background-color: #8face3;
+}
+body {
+	border: 2px solid #8face3;
+	background-color: #ffffff;
+	padding: 0px;
+	margin: 10px;
+	
+	min-height: 500px;
+	font-family: Arial, sans-serif;
+	position: relative;
+}
+
+h1, h2, h3 {
+	margin: 0px;
+	padding: 0px;
+	padding-top: 5px;
+	border: 0px;
+}
+
+p {
+	margin-top: 0px;
+}
+
+#bookmark {
+	float: right;
+	background-color: #8face3;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-bottom: 2px;
+	margin-right: 10px;
+}
+
+#logo {
+	background-image: url("images/headerline.png");
+	text-align: left;
+}
+
+#breadcrumbs {
+	
+	position: relative;
+	top: -11px;
+	border-bottom: 2px solid #8face3;
+	text-indent: 35px;
+	margin: 0px;
+}
+
+#breadcrumbs a {
+	color: black;
+	text-decoration: none;
+}
+
+#breadcrumbs a:visited {
+	color: black;
+}
+
+#breadcrumbs a:hover {
+	color: #134dba;
+}
+
+#navbar {
+	z-index: 2;
+	position: relative;
+	top: -13px;
+	float: right;
+	clear: left;
+	background-color: #ffffff;
+	padding-right: 5px;
+	border-left: 2px solid #8face3;
+	border-bottom: 2px solid #8face3;
+	margin: 0px;
+	margin-left: 30px;
+	padding: 0px;
+}
+
+#navbar ul {
+	padding: 0px;
+	padding-bottom: 10px;
+	margin: 0px;
+	margin-left: 5px;
+}
+
+.nav1 {
+	background-color: #ffffff;
+	list-style-position: inside;
+	list-style-type: none;
+	margin: 0;
+	padding-left: 0px;
+}
+
+.nav2 {
+	background-color: #8face3;
+	list-style-position: inside;
+	list-style-type: none;
+	margin: 0;
+	padding-left: 0px;
+}
+
+#navbar a {
+	color: black;
+	text-decoration: none;
+	margin-right: 0px;
+	width: 100%;
+	display: block;
+	padding-right: 20px;
+	padding-left: 9px;
+}
+
+#navbar a:visited {
+	text-decoration: none;
+	color: black;
+}
+
+#navbar a:active {
+	text-decoration: none;
+	color: black;
+}
+
+#navbar a:hover {
+	text-decoration: none;
+	color: #022c79;
+	
+}
+
+
+
+#content {
+	position: relative;
+	padding: 10px;
+	padding-bottom: 0px;
+	top: -5px;
+	padding-top: 0px;
+	margin: 0px;
+}
+
+.snazzbox {
+	background-color: #dfe8fa;
+	margin: 20px;
+	padding: 10px;
+	border: 1px solid black;
+}
+
+.boxhead {
+	background-color: #8face3;
+	margin: 0px;
+	padding: 5px;
+	border-bottom: 1px solid black;
+}
+
+.boxhead h2 {
+	display: inline;
+	font-size: 100%;
+}
+
+.container {
+	padding: 0px;
+	border: 1px solid black;
+	border-bottom: none;
+	margin: 20px;
+	background-color: #dfe8fa;
+}
+
+.innerbox {
+	width: 100%;
+	padding-bottom: 10px;
+	border-bottom: 1px solid black;
+}
+
+.innerinnerbox {
+	padding: 10px;
+	padding-bottom: 0px;
+}
+
+h2 {
+	border-bottom: 2px solid #8face3;
+	margin-top: 5px;
+}
+
+#bookmark {
+	background-color: #ffffff;
+	position: absolute;
+	bottom: -1em;
+	left: 20px;
+}
+
+#bookmark a {
+	text-decoration: none;
+	color: black;
+	font-size: 70%;
+}
+
+#footer {
+	font-size: 70%;
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+}
+

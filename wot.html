@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN">
+<html xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<link rel="stylesheet" href="fsng.css" type="text/css" />
+<link href="favicon.png" type="image/png" />
+	<title>Freenet Social Networking Guide - Step 2</title>
+	</head>
+<body>
+<div id="logo">
+	<a href="index.html" title="Homepage">
+		<img src="images/header.png" alt="Freenet Social Networking Guide" style="border: none; " />
+	</a>
+</div>
+
+<div id="breadcrumbs">
+<p>Step 2</p>
+</div>
+
+<div id="navbar"><center><b>Main Series</b></center>
+	<ul>
+		<li class="nav1"><a href="freenet.html" title="Step 1: Freenet">
+			Step 1: Freenet</a>
+		</li>
+		<li class="nav1"><a href="wot.html" title="Step 2: Identity">
+			Step 2: Identity</a>
+		</li>
+		<li class="nav1"><a href="freemail.html" title="Step 3: Mail">
+			Step 3: Mail</a>
+		</li>
+		<li class="nav1"><a href="sone.html" title="Step 4: Microblogging">
+			Step 4: Microblogging</a>
+		</li>
+		<li class="nav1"><a href="fms.html" title="Step 5: Forums">
+			Step 5: Forums</a>
+		</li>
+		<li class="nav1"><a title="Step 6: Chat">
+			Step 6: Chat
+		</li>
+	</ul>
+	<hr />
+	<center><b>Additional Information</b></center>
+	<ul>
+                <li class="nav1"><a title="Import an FMS identity">
+                        Import an FMS identity</a>
+                </li>
+                <li class="nav1"><a title="Contact the author">
+                        Further reading</a>
+                </li>
+	</ul>
+	<hr />
+	<ul>
+                <li class="nav1"><a href="contact.html" title="Contact the author">
+                        Contact author</a>
+                </li>
+	</ul>
+</div>
+
+<div id="content">
+	<h1>Step 2: Creating an anonymous identity with the WebOfTrust</h1>
+	<ol>
+		<li><p>Starting from your node's home page go to the Plugins menu under Configuration.</p>
+			<p><a href="images/setup022.png"><img src="images/setup022.png" width="640" height="480" alt="Step 1" /></a></p>
+		</li>
+		<li><p>Load the official WebOfTrust plugin.</p>
+			<p><a href="images/setup023.png"><img src="images/setup023.png" width="640" height="480" alt="Step 2" /></a></p>
+		</li>
+		<li><p>When the plugin has finished downloading click on the 'Own anonymous identities' option under the Community menu.</p>
+			<p><a href="images/setup024.png"><img src="images/setup024.png" width="640" height="480" alt="Step 3" /></a></p>
+		</li>
+		<li><p>Freenet will automatically generate a random name for your new identity. If you don't like the one that is shown keep refreshing the page until you see one that you do. You can also choose your own nickname, but if you use one that is associated with you outside of Freenet you won't be anonymous.</p>
+			<p>When you have a name you are satisfied with click 'Create'.
+			<p><a href="images/setup025.png"><img src="images/setup025.png" width="640" height="480" alt="Step 4" /></a></p>
+		</li>
+		<li><p>The two boxes full of random characters contain the public and private keys of your identity. Take the time now to copy this information to a file and store it somewhere safe in case something happens to your node. If possible, encrypt the file to prevent anyone from discovering your private key.</p>
+			<p>If you don't copy the two URIs now and want to do it later click on the 'Edit' button for the identity on the "Own anonymous identies" page.
+			<p>When you are done click 'Create it'.
+			<p><a href="images/setup026.png"><img src="images/setup026.png" width="640" height="480" alt="Step 5" /></a></p>
+		</li>
+		<li><p>After the identity is created go back to Own anonymous identies.</p>
+			<p><a href="images/setup027.png"><img src="images/setup027.png" width="640" height="480" alt="Step 6" /></a></p>
+		</li>
+		<li><p>The final step needed to make other people see your posts is to introduce the identity.</p>
+			<p><a href="images/setup028.png"><img src="images/setup028.png" width="640" height="480" alt="Step 7" /></a></p>
+			</li>
+		<li><p>Unfortunately you'll need to wait some time for the WoT plugin to download introduction puzzles. You should have some puzzles to solve after an hour or two but for best performance let the node run overnight to download identies and come back to this step tomorrow.</p>
+			<p>You can also skip the introduction and continue on to setting up Freemail and Sone but remember to come back and introduce at some point or else nobody will see any of your posts. The disadvantage not waiting for the WoT to finish bootstrapping is that it will take longer if Sone is also trying to bootstrap at the same time.
+			<p><a href="images/setup029.png"><img src="images/setup029.png" width="640" height="480" alt="Step 8" /></a></p>
+		</li>
+		<li><p>After waiting a sufficient amount of time for the WoT to finish downloading identities go back to the introduction page. Now you should have a page full of puzzles to solve. Follow the instructions on the screen and click 'Submit'.</p>
+			<p><a href="images/setup030.png"><img src="images/setup030.png" width="640" height="480" alt="Step 9" /></a></p>
+			</li>
+		<li><p>After you've solved about 10 puzzles it's just a matter of waiting for the other identies to recognize you. When the number of Trusters changes to something greated than zero your identity has been successfully introduced. You should try to get at least 5 Trusters, so if necessary repeat the introduction process.</p>
+			<p><a href="images/setup031.png"><img src="images/setup031.png" width="640" height="480" alt="Step 10" /></a></p>
+		</li>
+	</ol>
+
+	<p>Once your identity has been succesfully introduced the next step is to get a <a href="freemail.html">Freemail</a> account.</p>
+</div>
+
+<br clear="both" />
+
+<div id="bookmark">
+<a href="/?newbookmark=USK@t5zaONbYd5DvGNNSokVnDCdrIEytn9U5SSD~pYF0RTE,guWyS9aCMcywU5PFBrKsMiXs7LzwKfQlGSRi17fpffc,AQACAAE/fsng/-1/&amp;desc=Freemail" title="Add this site to your bookmarks">
+Bookmark
+</a>
+</div>
+
+<div id="footer">
+by <a href="/Sone/viewSone.html?sone=JOKHnSe4cTWMCeQNSHr~-xqcYb2Tq0sVhDYPcklXhA8">Justus Ranvier</a>
+</div>
+
+</body>
+</html>
