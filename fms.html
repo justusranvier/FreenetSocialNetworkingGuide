@@ -81,10 +81,10 @@
 			<p>Go to the Options page.</p>
 			<p><a href="images/setup074.png"><img src="images/setup074.png" width="640" height="480" alt="Step 6" /></a></p>
 		</li>
-		<li><p>Enable WOT support and save.</p>
+		<li><p>Enable WOT to allow FMS to read your WebOfTrust identity. Sone support is unnecessary unless you want to be able to read Sone posts in Thunderbird as well as the web interface.</p>
 			<p><a href="images/setup075.png"><img src="images/setup075.png" width="640" height="480" alt="Step 7" /></a></p>
 		</li>
-		<li>	<p>At this point we're going to import your WoT identity into FMS.</p>
+		<li>	<p>At this point we're going to link your WoT identity to your FMS identity so that posts in both places will come from the same identity.</p>
 			<p>Go to the Local Identities page and then switch tabs back to the Freenet interface.</p>
 			<p><a href="images/setup076.png"><img src="images/setup076.png" width="640" height="480" alt="Step 8" /></a></p>
 		</li>
@@ -104,8 +104,8 @@
   &lt;PrivateKey&gt;SSK@<b>TRANSLATED_INSERT_URI</b>/&lt;/PrivateKey&gt;
   &lt;SingleUse&gt;false&lt;/SingleUse&gt;
   &lt;PublishTrustList&gt;false&lt;/PublishTrustList&gt;
-  &lt;PublishBoardList&gt;true&lt;/PublishBoardList&gt;
-  &lt;PublishFreesite&gt;true&lt;/PublishFreesite&gt;
+  &lt;PublishBoardList&gt;false&lt;/PublishBoardList&gt;
+  &lt;PublishFreesite&gt;false&lt;/PublishFreesite&gt;
  &lt;/Identity&gt;
 &lt;/IdentityExport&gt;</pre>
 			<p>Make sure the format of your keys looks like the example below. They should both start with "SSK@" and end in ",AQECAAE/" (private key) and ",AQACAAE/" (public key).
