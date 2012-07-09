@@ -78,21 +78,17 @@
 			<p><a href="images/setup073.png"><img src="images/setup073.png" width="640" height="480" alt="Step 5" /></a></p>
 		</li>
 		<li><p>This is the main interface for FMS you may want to bookmark it on your browser.</p>
-			<p>Go to the Options page.</p>
+			<p>Go to the Local Identities page and then switch tabs back to the Freenet interface.</p>
 			<p><a href="images/setup074.png"><img src="images/setup074.png" width="640" height="480" alt="Step 6" /></a></p>
 		</li>
-		<li><p>Enable WOT to allow FMS to read your WebOfTrust identity. Sone support is unnecessary unless you want to be able to read Sone posts in Thunderbird as well as the web interface.</p>
-			<p><a href="images/setup075.png"><img src="images/setup075.png" width="640" height="480" alt="Step 7" /></a></p>
-		</li>
-		<li>	<p>At this point we're going to link your WoT identity to your FMS identity so that posts in both places will come from the same identity.</p>
-			<p>Go to the Local Identities page and then switch tabs back to the Freenet interface.</p>
-			<p><a href="images/setup076.png"><img src="images/setup076.png" width="640" height="480" alt="Step 8" /></a></p>
+		<li><p>At this point we're going to link your WoT identity to your FMS identity so that posts in both places will come from the same identity.</p>
+			<p><a href="images/setup076.png"><img src="images/setup076.png" width="640" height="480" alt="Step 7" /></a></p>
 		</li>
 		<li><p>Open the Own anonymous identities page.</p>
-			<p><a href="images/setup077.png"><img src="images/setup077.png" width="640" height="480" alt="Step 9" /></a></p>
+			<p><a href="images/setup077.png"><img src="images/setup077.png" width="640" height="480" alt="Step 8" /></a></p>
 		</li>
 		<li><p>Click on the edit tab to get your keys. You should also have this information backed up somewhere safe after performing step 5 of the <a href="/wot.html">WebOfTrust tutorial</a>. If you didn't do that before, do it now.</p>
-			<p><a href="images/setup078.png"><img src="images/setup078.png" width="640" height="480" alt="Step 10" /></a></p>
+			<p><a href="images/setup078.png"><img src="images/setup078.png" width="640" height="480" alt="Step 9" /></a></p>
 		</li>
 		<li><p>FMS identity keys are compatible with WoT identity keys except they are written as SSK@ instead of USK@ and the FMS identity does not include the part including and after /WebOfTrust/</p>
 			<p>Using the following code as a template translate your WoT keys into FMS keys and save the resulting file as identities.xml. Copy your name exactly as it is shown on the Web Of Trust identity page.</p>
@@ -109,61 +105,55 @@
  &lt;/Identity&gt;
 &lt;/IdentityExport&gt;</pre>
 			<p>Make sure the format of your keys looks like the example below. They should both start with "SSK@" and end in ",AQECAAE/" (private key) and ",AQACAAE/" (public key).
-			<p><a href="images/setup079.png"><img src="images/setup079.png" width="640" height="480" alt="Step 11" /></a></p>
+			<p><a href="images/setup079.png"><img src="images/setup079.png" width="640" height="480" alt="Step 10" /></a></p>
 		</li>
 		<li><p>Import the identities.xml file you just created.</p>
-			<p><a href="images/setup080.png"><img src="images/setup080.png" width="640" height="480" alt="Step 12" /></a></p>
+			<p><a href="images/setup080.png"><img src="images/setup080.png" width="640" height="480" alt="Step 11" /></a></p>
 		</li>
 		<li><p>It will take a few minutes before FMS downloads your identity from the WebOfTrust, but first we need to restart FMS in order for the configuration changes to take effect.</p>
-			<p><a href="images/setup081.png"><img src="images/setup081.png" width="640" height="480" alt="Step 13" /></a></p>
+			<p><a href="images/setup081.png"><img src="images/setup081.png" width="640" height="480" alt="Step 12" /></a></p>
 		</li>
-		<li><p>Return to the home page and shutdown FMS.</p>
-			<p><a href="images/setup082.png"><img src="images/setup082.png" width="640" height="480" alt="Step 14" /></a></p>
-		</li>
-		<li><p>Restart FMS through the Control Panel.</p>
-			<p><a href="images/setup083png"><img src="images/setup083.png" width="640" height="480" alt="Step 15" /></a></p>
-		</li>
-		<li><p>In order for people who only have FMS identities instead of linked WoT-FMS identities to see your posts you need to announce in FMS just like you did before for the WebOfTrust.</p>
-			<p><a href="images/setup084.png"><img src="images/setup084.png" width="640" height="480" alt="Step 16" /></a></p>
+		<li><p>You need to announce your identity in FMS just like you did before for the WebOfTrust.</p>
+			<p><a href="images/setup084.png"><img src="images/setup084.png" width="640" height="480" alt="Step 13" /></a></p>
 		</li>
 		<li><p>The puzzle solving process is similar but FMS also has audio CAPTCHAs in addition to the graphical ones.</p>
-			<p><a href="images/setup085.png"><img src="images/setup085.png" width="640" height="480" alt="Step 17" /></a></p>
+			<p><a href="images/setup085.png"><img src="images/setup085.png" width="640" height="480" alt="Step 14" /></a></p>
 		</li>
 		<li><p>Like Freemail, FMS also has a web interface but you can also configure Thunderbird as your news reader.</p>
-			<p><a href="images/setup086.png"><img src="images/setup086.png" width="640" height="480" alt="Step 18" /></a></p>
+			<p><a href="images/setup086.png"><img src="images/setup086.png" width="640" height="480" alt="Step 15" /></a></p>
 		</li>
 		<li><p>Go to the Account Settings page and Add Other Account...</p>
-			<p><a href="images/setup087.png"><img src="images/setup087.png" width="640" height="480" alt="Step 19" /></a></p>
+			<p><a href="images/setup087.png"><img src="images/setup087.png" width="640" height="480" alt="Step 16" /></a></p>
 		</li>
 		<li><p>This is a Newsgroup account</p>
-			<p><a href="images/setup088.png"><img src="images/setup088.png" width="640" height="480" alt="Step 20" /></a></p>
+			<p><a href="images/setup088.png"><img src="images/setup088.png" width="640" height="480" alt="Step 17" /></a></p>
 		</li>
 		<li><p>The name you enter here must exactly match your FMS identity name. FMS will ignore the email address so you can enter anything, but you might want to put your Freemail address to make it easier to use Enigmail with this account.</p>
-			<p><a href="images/setup089.png"><img src="images/setup089.png" width="640" height="480" alt="Step 21" /></a></p>
+			<p><a href="images/setup089.png"><img src="images/setup089.png" width="640" height="480" alt="Step 18" /></a></p>
 		</li>
 		<li><p>FMS listens on the localhost interface.</p>
-			<p><a href="images/setup090.png"><img src="images/setup090.png" width="640" height="480" alt="Step 22" /></a></p>
+			<p><a href="images/setup090.png"><img src="images/setup090.png" width="640" height="480" alt="Step 19" /></a></p>
 		</li>
 		<li><p>Give the account a meaningful name.</p>
-			<p><a href="images/setup091.png"><img src="images/setup091.png" width="640" height="480" alt="Step 23" /></a></p>
+			<p><a href="images/setup091.png"><img src="images/setup091.png" width="640" height="480" alt="Step 20" /></a></p>
 		</li>
 		<li><p>That was painless.</p>
-			<p><a href="images/setup092.png"><img src="images/setup092.png" width="640" height="480" alt="Step 24" /></a></p>
+			<p><a href="images/setup092.png"><img src="images/setup092.png" width="640" height="480" alt="Step 21" /></a></p>
 		</li>
 		<li><p>Before you close this window change the Port to 1119 and make sure to check "Always request authentication when connecting to this server".</p>
-			<p><a href="images/setup093.png"><img src="images/setup093.png" width="640" height="480" alt="Step 25" /></a></p>
+			<p><a href="images/setup093.png"><img src="images/setup093.png" width="640" height="480" alt="Step 22" /></a></p>
 		</li>
 		<li><p>There won't be much to see here until you subscribe to some newsgroups.</p>
-			<p><a href="images/setup094.png"><img src="images/setup094.png" width="640" height="480" alt="Step 26" /></a></p>
+			<p><a href="images/setup094.png"><img src="images/setup094.png" width="640" height="480" alt="Step 23" /></a></p>
 		</li>
 		<li><p>Enter your FMS identity name here. No password is required.</p>
-			<p><a href="images/setup095.png"><img src="images/setup095.png" width="640" height="480" alt="Step 27" /></a></p>
+			<p><a href="images/setup095.png"><img src="images/setup095.png" width="640" height="480" alt="Step 24" /></a></p>
 		</li>
 		<li><p>Choose a few newsgroups that interest you. As time goes on more newsgroups will appear as FMS discovers them so check back from time to time.</p>
-			<p><a href="images/setup096.png"><img src="images/setup096.png" width="640" height="480" alt="Step 28" /></a></p>
+			<p><a href="images/setup096.png"><img src="images/setup096.png" width="640" height="480" alt="Step 25" /></a></p>
 		</li>
 		<li><p>Now you're ready to make you first post to FMS from Thunderbird. Use the test forum to avoid cluttering up other areas.</p>
-			<p><a href="images/setup097.png"><img src="images/setup097.png" width="640" height="480" alt="Step 29" /></a></p>
+			<p><a href="images/setup097.png"><img src="images/setup097.png" width="640" height="480" alt="Step 26" /></a></p>
 		</li>
 	</ol>
 
