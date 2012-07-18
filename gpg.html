@@ -1,0 +1,249 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN">
+<html xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<link rel="stylesheet" href="fsng.css" type="text/css" />
+<link href="favicon.png" type="image/png" />
+	<title>Freenet Social Networking Guide - GPG</title>
+	</head>
+<body>
+<div id="logo">
+	<a href="index.html" title="Homepage">
+		<img src="images/header.png" alt="Freenet Social Networking Guide" style="border: none; " />
+	</a>
+</div>
+
+<div id="breadcrumbs">
+<p>Email encryption</p>
+</div>
+
+<div id="navbar"><center><b>Main Series</b></center>
+	<ul>
+		<li class="nav1"><a href="freenet.html" title="Step 1: Freenet">
+			Step 1: Freenet</a>
+		</li>
+		<li class="nav1"><a href="wot.html" title="Step 2: Identity">
+			Step 2: Identity</a>
+		</li>
+		<li class="nav1"><a href="freemail.html" title="Step 3: Mail">
+			Step 3: Mail</a>
+		</li>
+		<li class="nav1"><a href="sone.html" title="Step 4: Microblogging">
+			Step 4: Microblogging</a>
+		</li>
+		<li class="nav1"><a href="fms.html" title="Step 5: Forums">
+			Step 5: Forums</a>
+		</li>
+		<li class="nav1"><a title="Step 6: Chat">
+			Step 6: Chat
+		</li>
+	</ul>
+	<hr />
+	<center><b>Additional Information</b></center>
+	<ul>
+                <li class="nav1"><a href="gpg.html"  title="Add GPG encryption">
+                        Add GPG encryption</a>
+                </li>
+               <li class="nav1"><a href="more.html" title="Further reading">
+                        Further reading</a>
+                </li>
+	</ul>
+	<hr />
+	<ul>
+                <li class="nav1"><a href="contact.html" title="Contact the author">
+                        Contact author</a>
+                </li>
+	</ul>
+</div>
+
+<div id="content">
+	<h1>Setting up email encryption</h1>
+	<p>This tutorial will walk through GPG and Enigmail setup and cover encryption and signing of messages in Thunderbird.</p>
+	<h2>Installing GnuPG</h2>
+	<ol>
+		<li><p>The first thing to install is the GnuPG. If you are running Linux you probably already have it installed. If you don't have it already go to the <a href="http://www.gnupg.org/">GnuPG website</a> and follow the correct download link for your operating system. The following steps will illustrate the Windows version of GnuPG.</p>
+			<p>Download and run the Gpg4win installer.</p>
+			<p><a href="images/setup102.png"><img src="images/setup102.png" width="640" height="480" alt="Step 1" /></a></p>
+		</li>
+		<li><p>You can accept the default values for many of the following screens.</p>
+			<p><a href="images/setup103.png"><img src="images/setup103.png" width="640" height="480" alt="Step 2" /></a></p>
+			<p><a href="images/setup104.png"><img src="images/setup104.png" width="640" height="480" alt="Step 3" /></a></p>
+			<p><a href="images/setup105.png"><img src="images/setup105.png" width="640" height="480" alt="Step 4" /></a></p>
+		</li>
+		<li><p>Make sure to enable GPA here. If you're using this guide to set up GnuPG you don't need to install Kleopatra. Claws-Mail is an alternative to Thunderbird that you can use if you want but this guide will not cover it.</p>
+			<p><a href="images/setup106.png"><img src="images/setup106.png" width="640" height="480" alt="Step 5" /></a></p>
+		</li>
+		<li><p>These defaults should be adequate.</p>
+			<p><a href="images/setup107.png"><img src="images/setup107.png" width="640" height="480" alt="Step 6" /></a></p>
+			<p><a href="images/setup108.png"><img src="images/setup108.png" width="640" height="480" alt="Step 7" /></a></p>
+			<p><a href="images/setup109.png"><img src="images/setup109.png" width="640" height="480" alt="Step 8" /></a></p>
+		</li>
+		<li><p>There is no need to set up certificates at this time so check the box to skip that configuration.</p>
+			<p><a href="images/setup110.png"><img src="images/setup110.png" width="640" height="480" alt="Step 9" /></a></p>
+		</li>
+	</ol>
+	<h2>Enigmail installation</h2>
+	<ol>
+		<li><p>Now that GnuPG is installed open Thunderbird and go to the Add-ons menu.</p>
+			<p><a href="images/setup111.png"><img src="images/setup111.png" width="640" height="480" alt="Step 1" /></a></p>
+		</li>
+		<li><p>Search for Enigmail</p>
+			<p><a href="images/setup112.png"><img src="images/setup112.png" width="640" height="480" alt="Step 1" /></a></p>
+		</li>
+		<li><p>Install the add-on.</p>
+			<p><a href="images/setup113.png"><img src="images/setup113.png" width="640" height="480" alt="Step 1" /></a></p>
+		</li>
+		<li><p>Restart Thunderbird.</p>
+			<p><a href="images/setup114.png"><img src="images/setup114.png" width="640" height="480" alt="Step 1" /></a></p>
+		</li>
+	</ol>
+	<h2>Generating a keypair</h2>
+	<ol>
+		<li><p>Use the Setup Wizard in the OpenPGP menu to create a keypair and configure Thunderbird to use it.</p>
+			<p><a href="images/setup115.png"><img src="images/setup115.png" width="640" height="480" alt="Step 1" /></a></p>
+		</li>
+		<li><p>Confirm that you want to use the wizard.</p>
+			<p><a href="images/setup116.png"><img src="images/setup116.png" width="640" height="480" alt="Step 2" /></a></p>
+		</li>
+		<li><p>Signing all emails is a good practice which does not require that your recipients have encryption keys. Choose 'Yes' here.</p>
+			<p><a href="images/setup117.png"><img src="images/setup117.png" width="640" height="480" alt="Step 3" /></a></p>
+		</li>
+		<li><p>For most people encryption should be disabled by default and enabled as required. Choose 'No'.</p>
+			<p><a href="images/setup118.png"><img src="images/setup118.png" width="640" height="480" alt="Step 4" /></a></p>
+		</li>
+		<li><p>Allow Enigmail to adjust Thunderbird's settings to their optimal values.</p>
+			<p><a href="images/setup119.png"><img src="images/setup119.png" width="640" height="480" alt="Step 5" /></a></p>
+		</li>
+		<li><p>If Thunderbird can not find the GnuPG program you may be prompted to enter its location manually. Unless you changed the default installation directory it will be located in c:\Program Files\GNU\GnuPG\ on Windows.</p>
+			<p><a href="images/setup120.png"><img src="images/setup120.png" width="640" height="480" alt="Step 6" /></a></p>
+		</li>
+		<li><p>Now tell Enigmail to create a keypair.</p>
+			<p><a href="images/setup121.png"><img src="images/setup121.png" width="640" height="480" alt="Step 7" /></a></p>
+		</li>
+		<li><p>Choose a long, but memorable passphrase.</p>
+			<p><a href="images/setup122.png"><img src="images/setup122.png" width="640" height="480" alt="Step 8" /></a></p>
+		</li>
+		<li><p>Click 'Next' to create your keys.</p>
+			<p><a href="images/setup123.png"><img src="images/setup123.png" width="640" height="480" alt="Step 9" /></a></p>
+		</li>
+		<li><p>Create the revocation now because if you ever need it in the future and don't do it now you'll invariably forget to create one until it's too late.</p>
+			<p><a href="images/setup124.png"><img src="images/setup124.png" width="640" height="480" alt="Step 10" /></a></p>
+		</li>
+		<li><p>For now, save the certificate somewhere memorable.</p>
+			<p><a href="images/setup125.png"><img src="images/setup125.png" width="640" height="480" alt="Step 11" /></a></p>
+		</li>
+		<li><p>You need to enter your passphrase to create the certificate.</p>
+			<p><a href="images/setup126.png"><img src="images/setup126.png" width="640" height="480" alt="Step 12" /></a></p>
+		</li>
+		<li><p>This is good advice, but don't use a floppy disk. Use something more modern, like a USB stick.</p>
+			<p><a href="images/setup127.png"><img src="images/setup127.png" width="640" height="480" alt="Step 13" /></a></p>
+		</li>
+		<li><p>You are now ready to sign and decrypt messages in Thunderbird.</p>
+			<p><a href="images/setup128.png"><img src="images/setup128.png" width="640" height="480" alt="Step 14" /></a></p>
+		</li>
+	<h2>Example use</h2>
+	<p>This section will walk through how to publish your public key so that other people can find it, as well as importing another person's key and configuring Thunderbird to alway send them encrypted messages.
+	<ol>
+		<li><p>Open up The GNU Privacy Assistant (GPA) and you should see the keypair you created before. In order for other people to send you encrypted emails or verify your signature on your outgoing mail they need to have a copy of your public key. Sending your key to a service called a "key server" is a good way to do this.</p>
+			<p>You should use Tor when accessing a keyserver over the Internet to avoid compromising your anonymity.</p>
+			<p><a href="images/setup130.png"><img src="images/setup130.png" width="640" height="480" alt="Step 1" /></a></p>
+		</li>
+		<li><p>There is no reason to be shy. Your public key is more useful if more people have it.</p>
+			<p><a href="images/setup131.png"><img src="images/setup131.png" width="640" height="480" alt="Step 2" /></a></p>
+		</li>
+		<li><p>Now those who wish to send you secure email can query <code>keys.gnupg.net</code> for your email address and obtain your public key to encrypt with.</p>
+			<p><a href="images/setup132.png"><img src="images/setup132.png" width="640" height="480" alt="Step 3" /></a></p>
+		</li>
+		<li><p>You'll also need to export a copy of your public key on your hard drive for subsequent steps.</p>
+			<p><a href="images/setup133.png"><img src="images/setup133.png" width="640" height="480" alt="Step 4" /></a></p>
+		</li>
+		<li><p>Save it in a memorable location.</p>
+			<p><a href="images/setup134.png"><img src="images/setup134.png" width="640" height="480" alt="Step 5" /></a></p>
+		</li>
+		<li><p>This is an optional step to help establish the key as part of your Freenet identity. Open up your node interface and go to the 'Upload a file' page.</p>
+			<p><a href="images/setup135.png"><img src="images/setup135.png" width="640" height="480" alt="Step 6" /></a></p>
+		</li>
+		<li><p>The file you'll be uploading is small enough that you can insert it through the browser. Choose the public key file you just exported from GPA.</p>
+			<p><a href="images/setup136.png"><img src="images/setup136.png" width="640" height="480" alt="Step 7" /></a></p>
+		</li>
+		<li><p>You can choose either type of key but the random, safe (SSK) option is safest.</p>
+			<p><a href="images/setup137.png"><img src="images/setup137.png" width="640" height="480" alt="Step 8" /></a></p>
+		</li>
+		<li><p>Once the node tells you the key copy that link to the clipboard so you can publish the location of your public key on Sone.</p>
+			<p><a href="images/setup138.png"><img src="images/setup138.png" width="640" height="480" alt="Step 9" /></a></p>
+		</li>
+		<li><p>Go to your Sone profile setup and add a 'Public key' field. Paste the link from before into the field and remove everything before SSK@ or CHK@.</p>
+			<p><a href="images/setup139.png"><img src="images/setup139.png" width="640" height="480" alt="Step 10" /></a></p>
+		</li>
+		<li><p>Save your profile and you'll now have a new field that Sone automagically turns into a link.</p><p>The reason to publish your GPG key here is so that you can communicate with people over different channels and prove that you are the same person instead of an imposer. Anyone who sees a message from you signed by the same key published on your Sone profile will know for certain that they are talking to the same person.</p>
+			<p><a href="images/setup140.png"><img src="images/setup140.png" width="640" height="480" alt="Step 11" /></a></p>
+		</li>
+		<li><p>For the next step you need another person's public key. This fine individual is also publishing a public key so let's click on the Public key link to download his.</p>
+			<p><a href="images/setup141.png"><img src="images/setup141.png" width="640" height="480" alt="Step 12" /></a></p>
+		</li>
+		<li><p>Freenet is extremely cautious about what it will display. Any content which has the slightest potential to compromise your anonymity will trigger this screen.</p>
+			<p>To proceed click on the link in the lower-left corner which will open the file as plain text</p>
+			<p><a href="images/setup142.png"><img src="images/setup142.png" width="640" height="480" alt="Step 13" /></a></p>
+		</li>
+		<li><p>This is what a public key actually looks like.</p>
+			<p><a href="images/setup143.png"><img src="images/setup143.png" width="640" height="480" alt="Step 14" /></a></p>
+		</li>
+		<li><p>Save this file to a memorable location.</p>
+			<p><a href="images/setup144.png"><img src="images/setup144.png" width="640" height="480" alt="Step 15" /></a></p>
+		</li>
+		<li><p>Now return to GPA and click on the 'Import' button.</p>
+			<p><a href="images/setup145.png"><img src="images/setup145.png" width="640" height="480" alt="Step 16" /></a></p>
+		</li>
+		<li><p>Choose the file you just saved.</p>
+			<p><a href="images/setup146.png"><img src="images/setup146.png" width="640" height="480" alt="Step 17" /></a></p>
+		</li>
+		<li><p>Now you've successfully imported a public key.</p>
+			<p><a href="images/setup147.png"><img src="images/setup147.png" width="640" height="480" alt="Step 18" /></a></p>
+		</li>
+		<li><p>Now that GnuPG knows about the public key you just imported you can now use it to send an encrypted message.</p>
+			<p>In the message composition window you should notice a new OpenPGP button in the toolbar (ignore the S/MIME menu). Clicking here will allow you to sign and/or encrypt an outgoing message.
+			<p><a href="images/setup148.png"><img src="images/setup148.png" width="640" height="480" alt="Step 19" /></a></p>
+		</li>
+		<li><p>You need the passphrase you used when you originally created the key to sign or decrypt messages.</p>
+			<p><a href="images/setup149.png"><img src="images/setup149.png" width="640" height="480" alt="Step 20" /></a></p>
+		</li>
+		<li><p>This is what an encrypted email looks like. Anyone who intercepts the message in transit will not be able to see the contents unless they possess the correct private key.</p>
+			<p><a href="images/setup150.png"><img src="images/setup150.png" width="640" height="480" alt="Step 21" /></a></p>
+		</li>
+		<li><p>Once you have a public key for someone there's no reason not to encrypt all emails you send them. Fortunately Thunderbird can allow you to set up rules to do this automatically.</p>
+			<p>From the address book entry for a contact choose 'Create OpenPGP Rule from Address' from the context menu.</p>
+			<p><a href="images/setup151.png"><img src="images/setup151.png" width="640" height="480" alt="Step 22" /></a></p>
+		</li>
+		<li><p>The default values require you to manually specify encryption. To change this, first select 'Use the following OpenPGP keys:' and click on the 'Select Key(s)' button.</p>
+			<p><a href="images/setup152.png"><img src="images/setup152.png" width="640" height="480" alt="Step 23" /></a></p>
+		</li>
+		<li><p>Choose the contact's public key. If you don't have their public key yet you can try downloading it from the keyserver by clicking on 'Download missing keys'. This is one reason why you should upload your own.</p>
+			<p><a href="images/setup153.png"><img src="images/setup153.png" width="640" height="480" alt="Step 24" /></a></p>
+		</li>
+		<li><p>Now that you've told Enigmail which key to use for encryption tell it to always sign and encrypt messages you send them. It's usually good to also send them messages as PGP/MIME but there are a few lame email clients which don't support PGP/MIME, like Outlook. Anyone using Thunderbird or Claws-mail can receive PGP/MIME so if you know that's what your contact uses enable that option as well.</p>
+			<p><a href="images/setup154.png"><img src="images/setup154.png" width="640" height="480" alt="Step 25" /></a></p>
+		</li>
+		<li><p>One thing you should note is that Enigmail needs to be enabled for every account you use in Thunderbird. If you go to the 'Account Settings' you'll see that all your ccounts now have a 'OpenPGP Security' section.</p>
+			<p>Click on the top checkbox to enable Enigmail for any account which are not already set up. If the email address of the account is already associated with your public key you cn leave the next setting alone. Otherwise, or just to be safe, change to 'Use specific OpenPGP Key' and select it's ID.</p>
+			<p><a href="images/setup155.png"><img src="images/setup155.png" width="640" height="480" alt="Step 26" /></a></p>
+		</li>
+	</ol>
+	<p>That's it for the basic setup. This is only scratching the surface of what a PKI entails but you should have enough under control now to get started.</p>
+	<p>Go forth and encrypt your emails.</p>
+</div>
+
+<br clear="both" />
+
+<div id="bookmark">
+<a href="/?newbookmark=USK@t5zaONbYd5DvGNNSokVnDCdrIEytn9U5SSD~pYF0RTE,guWyS9aCMcywU5PFBrKsMiXs7LzwKfQlGSRi17fpffc,AQACAAE/fsng/-1/&amp;desc=Freemail" title="Add this site to your bookmarks">
+Bookmark
+</a>
+</div>
+
+<div id="footer">
+by <a href="/Sone/viewSone.html?sone=JOKHnSe4cTWMCeQNSHr~-xqcYb2Tq0sVhDYPcklXhA8">Justus Ranvier</a>
+</div>
+
+</body>
+</html>
