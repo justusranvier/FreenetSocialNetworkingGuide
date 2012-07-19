@@ -1,4 +1,4 @@
-html {
+﻿html {
 	background-color: #8face3;
 }
 body {
@@ -197,3 +197,6 @@ h2 {
 	right: 0px;
 }
 
+table {
+	border: none;
+}

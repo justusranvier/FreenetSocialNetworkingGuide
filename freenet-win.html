@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN">
+<html xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<link rel="stylesheet" href="fsng.css" type="text/css" />
+<link href="favicon.png" type="image/png" />
+	<title>Freenet Social Networking Guide - Step 1</title>
+	</head>
+<body>
+<div id="logo">
+	<a href="index.html" title="Homepage">
+		<img src="images/header.png" alt="Freenet Social Networking Guide" style="border: none; " />
+	</a>
+</div>
+
+<div id="breadcrumbs">
+<p>Step 1</p>
+</div>
+
+<div id="navbar"><center><b>Main Series</b></center>
+	<ul>
+		<li class="nav1"><a href="freenet.html" title="Step 1: Freenet">
+			Step 1: Freenet</a>
+		</li>
+		<li class="nav1"><a href="wot.html" title="Step 2: Identity">
+			Step 2: Identity</a>
+		</li>
+		<li class="nav1"><a href="freemail.html" title="Step 3: Mail">
+			Step 3: Mail</a>
+		</li>
+		<li class="nav1"><a href="sone.html" title="Step 4: Microblogging">
+			Step 4: Microblogging</a>
+		</li>
+		<li class="nav1"><a href="fms.html" title="Step 5: Forums">
+			Step 5: Forums</a>
+		</li>
+		<li class="nav1"><a title="Step 6: Chat">
+			Step 6: Chat
+		</li>
+	</ul>
+	<hr />
+	<center><b>Additional Information</b></center>
+	<ul>
+                <li class="nav1"><a href="gpg.html"  title="Add GPG encryption">
+                        Add GPG encryption</a>
+                </li>
+               <li class="nav1"><a href="more.html" title="Further reading">
+                        Further reading</a>
+                </li>
+	</ul>
+	<hr />
+	<ul>
+                <li class="nav1"><a href="contact.html" title="Contact the author">
+                        Contact author</a>
+                </li>
+	</ul>
+</div>
+
+<div id="content">
+<h2>Freenet Installation for Microsoft Windows</h2>
+<ol>
+	<li><p>Download and run the <a href="https://freenetproject.org/">Freenet Installer</a>.</p>
+		<p>The first thing the installer will do is check for an updated version of Java. If necessary, update Java now or if you already have a new enough version you can skip to step 4.</p>
+		<p>Note: If you are running a 64 bit version of Windows with a 64 bit version of Java you must go to <a href="http://java.com">java.com</a> and install a 32 bit JVM as well.</p>
+		<p><a href="images/setup001.png"><img src="images/setup001.png" width="640" height="480" alt="Step 1" /></a></p>
+	</li>
+	<li><p>The default directory is fine.</p>
+		<p><a href="images/setup002.png"><img src="images/setup002.png" width="640" height="480" alt="Step 2" /></a></p>
+	</li>
+	<li><p>Now you're done with Java.</p>
+		<p><a href="images/setup003.png"><img src="images/setup003.png" width="640" height="480" alt="Step 3" /></a></p>
+	</li>
+	<li><p>Select the first three options under Additional settings and click 'Install'.</p>
+		<p><a href="images/setup004.png"><img src="images/setup004.png" width="640" height="480" alt="Step 4" /></a></p>
+	</li>
+	<li><p>Click 'OK' to close the installer.</p>
+		<p><a href="images/setup005.png"><img src="images/setup005.png" width="640" height="480" alt="Step 5" /></a></p>
+	</li>
+	<li><p>Before we go any further let's increase the maximum amount of RAM the node is allowed to use to make sure we have enough to run the social networking plugins.</p>
+		<p>Right-click on the Freenet icon in the system tray and click 'Exit'.
+		<p><a href="images/setup006.png"><img src="images/setup006.png" width="640" height="480" alt="Step 6" /></a></p>
+	</li>
+	<li><p>The file you need to edit is stored under your profile in a location that depends on your user name. You may need to tell Windows to stop hiding system file in order for you to access the Application Data folder. Open wrapper.conf in a text editor.</p>
+		<p><a href="images/setup007.png"><img src="images/setup007.png" width="640" height="480" alt="Step 7" /></a></p>
+	</li>
+	<li><p>The last line of the file specifies the amount of RAM that Freenet is allowed to use. Change this value to 512 and save the file.</p>
+		<p><a href="images/setup008.png"><img src="images/setup008.png" width="640" height="480" alt="Step 8" /></a></p>
+	</li>
+	<li><p>Start Freenet from the desktop icon.</p>
+		<p><a href="images/setup009.png"><img src="images/setup009.png" width="640" height="480" alt="Step 9" /></a></p>
+	</li>
+</ol>
+<p>Continue the installation by <a href="freenet-config.html">configuring your node</a>.</p>
+</div>
+
+<br clear="both" />
+
+<div id="bookmark">
+<a href="/?newbookmark=USK@t5zaONbYd5DvGNNSokVnDCdrIEytn9U5SSD~pYF0RTE,guWyS9aCMcywU5PFBrKsMiXs7LzwKfQlGSRi17fpffc,AQACAAE/fsng/-1/&amp;desc=Freemail" title="Add this site to your bookmarks">
+Bookmark
+</a>
+</div>
+
+<div id="footer">
+by <a href="/Sone/viewSone.html?sone=JOKHnSe4cTWMCeQNSHr~-xqcYb2Tq0sVhDYPcklXhA8">Justus Ranvier</a>
+</div>
+
+</body>
+</html>
