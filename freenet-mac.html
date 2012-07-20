@@ -58,9 +58,15 @@
 </div>
 
 <div id="content">
-<h2>Freenet Installation for Mac OS X</h2>
+	<h1>Step 1: Installing and configuring your Freenet node</h1>
+	<br />
+	<p>Before you get started make sure you have a reliable browser and mail client installed. This guide will use <a href="http://www.firefox.com">Firefox</a> and <a href="http://www.mozilla.org/thunderbird">Thunderbird</a>.</p>
+	<br />
+	<p><a href="freenet-win.html"><img src="images/windows.png" alt="Windows instructions" class="vcenter" /></a>To view instructions for installing Freenet on Windows <a href="freenet-win.html#OS">click here</a>.</p>
+	<p><a href="freenet-mac.html"><img src="images/mac.png" alt="Mac OS X instructions" class="vcenter" /></a>To view instructions for installing Freenet on Mac OS X <a href="freenet-mac.html#OS">click here</a>.</p></a>
+	<a name="OS"><h2>Freenet Installation for Mac OS X</h2></a>
 <ol>
-	<li><p>Download and run the <a href="https://freenetproject.org/">Freenet Installer</a> and launch the web installer.</p>
+	<li><p>Download and run the <a href="https://freenetproject.org/">Freenet Installer</a></p>
 		<p><a href="images/setup156.png"><img src="images/setup156.png" width="640" height="480" alt="Step 1" /></a></p>
 	</li>
 	<li><p>If you don't already have Java installed you'll be prompted to do that first.</p>
@@ -88,7 +94,63 @@
 		<p><a href="images/setup168.png"><img src="images/setup168.png" width="640" height="480" alt="Step 7e" /></a></p>
 	</li>
 </ol>
-<p>Continue the installation by <a href="freenet-config.html">configuring your node</a>.</p>
+<a name="config"><h2>Freenet Configuration</h2></a>
+<ol>
+	<li><p>You should now see the setup wizard. Click 'Choose custom security'.</p>
+		<p><a href="images/setup169.png"><img src="images/setup169.png" width="640" height="480" alt="Step 1" /></a></p>
+	</li>
+	<li><p>You should always browse Freenet in Private Browsing or Incognito modes. If you aren't already do so now. Remember to copy the URL and paste it back into the address bar.</p>
+		<p><a href="images/setup170.png"><img src="images/setup170.png" width="640" height="480" alt="Step 2" /></a></p>
+	</li>
+	<li><p>Click 'Next'.</p>
+		<p><a href="images/setup171.png"><img src="images/setup171.png" width="640" height="480" alt="Step 3" /></a></p>
+	</li>
+	<li><p>Enable automatic updates and UPnP and click 'Next'.</p>
+		<p><a href="images/setup172.png"><img src="images/setup172.png" width="640" height="480" alt="Step 4" /></a></p>
+	</li>
+	<li><p>Choose the second option here. If you know other people who use Freenet you can upgrade to darknet mode in the future but for now you need to connect to strangers in order to access the network.</p>
+		<p><a href="images/setup173.png"><img src="images/setup173.png" width="640" height="480" alt="Step 5" /></a></p>
+	</li>
+	<li><p>Choose "NORMAL" here.</p>
+		<p><a href="images/setup174.png"><img src="images/setup174.png" width="640" height="480" alt="Step 6" /></a></p>
+	</li>
+	<li><p>Choose "LOW" here. The higher levels of security unfortunately do not fully protect your identity if you use the kinds of social networking plugins we will be installing. You should use a whole disk encryption product like <a href="http://www.truecrypt.org/">Truecrypt</a> or FileVault, but setting that up is outside the scope of this guide.</p>
+		<p><a href="images/setup175.png"><img src="images/setup175.png" width="640" height="480" alt="Step 7" /></a></p>
+	</li>
+	<li><p>The installer will pick a default value based on the size of your hard drive.</p>
+		<p><a href="images/setup176.png"><img src="images/setup176.png" width="640" height="480" alt="Step 8" /></a></p>
+	</li>
+	<li><p>You have two options to choose from here. If you want to limit bandwidth based on a monthly cap click 'Yes'. Otherwise click 'No' and skip to step 11.</p>
+		<p><a href="images/setup177.png"><img src="images/setup177.png" width="640" height="480" alt="Step 9" /></a></p>
+	</li>
+	<li><p>'Select' your monthly data cap from the options provided or type a value into the last box. Skip to step 12.</p>
+		<p><a href="images/setup178.png"><img src="images/setup178.png" width="640" height="480" alt="Step 10" /></a></p>
+	</li>
+	<li><p>Select the right bandwidth limit based on your connection type in your own values.</p>
+		<p><a href="images/setup179.png"><img src="images/setup179.png" width="640" height="480" alt="Step 11" /></a></p>
+	</li>
+	<li><p>Before installing any of the social networking plugins in future steps you should increase the maximum amount of memory your node is allowed to use. Go to the 'Core settings' page under the Configuration menu.</p>
+		<p><a href="images/setup180.png"><img src="images/setup180.png" width="640" height="480" alt="Step 12" /></a></p>
+	</li>
+	<li><p>The first option in this menu should be 'Maximum memory usage'. Change this value to 512.</p>
+		<p><a href="images/setup181.png"><img src="images/setup181.png" width="640" height="480" alt="Step 13" /></a></p>
+	</li>
+	<li><p>Scroll down to the bottom of the page and click 'Apply'.</p>
+		<p><a href="images/setup182.png"><img src="images/setup182.png" width="640" height="480" alt="Step 14" /></a></p>
+	</li>
+	<li><p>Before the change takes effect you must restart the node. Return to the Freenet homepage to do this.</p>
+		<p><a href="images/setup183.png"><img src="images/setup183.png" width="640" height="480" alt="Step 15" /></a></p>
+	</li>
+	<li><p>At the bottom of the page there is a button you can use to restart your node.</p>
+		<p><a href="images/setup184.png"><img src="images/setup184.png" width="640" height="480" alt="Step 16" /></a></p>
+	</li>
+	<li><p>Confirm that you want to restart and wait for the page to automatically refresh and load the home page.</p>
+		<p><a href="images/setup185.png"><img src="images/setup185.png" width="640" height="480" alt="Step 17" /></a></p>
+	</li>
+</ol>
+
+<p>At this point you may want to wait a few hours before continuing to the next step in order to let your node become fully connected to the network. Make sure your computer doesn't go into sleep or hibernation while Freenet is trying to connect to the network.</p>
+<p>When you are ready to continue it's time to setup the <a href="wot.html">Web of Trust</a> plugin.</p>
 </div>
 
 <br clear="both" />

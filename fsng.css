@@ -197,6 +197,6 @@ h2 {
 	right: 0px;
 }
 
-table {
-	border: none;
+.vcenter {
+	vertical-align: middle;
 }
