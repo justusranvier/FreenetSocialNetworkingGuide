@@ -65,32 +65,32 @@
 	<p>Instead, follow these instructions to install FMS:</p>
 	<ol>
 		<li><p>Unlike the other components we have installed so far, FMS works best as a separate application instead of a node plugin. You need to go to the FMS Freesite and <a href="/USK@0npnMrqZNKRCRoGojZV93UNHCMN-6UU3rRSAmP6jNLE,~BG-edFtdCC1cSH4O3BWdeIYa8Sw5DfyrSV-TKdO5ec,AQACAAE/fms/-135/download.htm">download</a> the correct version for your system.</p>
-			<p><a href="images/setup069.png"><img src="images/setup069.png" width="640" height="480" alt="Step 1" /></a></p>
+			<p><a href="images/05/setup001.png"><img src="images/05/setup001.png" width="640" height="480" alt="Step 1" /></a></p>
 		</li>
 		<li><p>The content filter won't allow you to display this file through the browser by default so save it to the Freenet download directory. Make sure to uncheck "Filter data".</p>
-			<p><a href="images/setup070.png"><img src="images/setup070.png" width="640" height="480" alt="Step 2" /></a></p>
+			<p><a href="images/05/setup002.png"><img src="images/05/setup002.png" width="640" height="480" alt="Step 2" /></a></p>
 		</li>
 		<li><p>Run the installer.</p>
-			<p><a href="images/setup071.png"><img src="images/setup071.png" width="640" height="480" alt="Step 3" /></a></p>
+			<p><a href="images/05/setup003.png"><img src="images/05/setup003.png" width="640" height="480" alt="Step 3" /></a></p>
 		</li>
 		<li><p>You can choose any installation directory you want but the default is probably best.</p>
-			<p><a href="images/setup072.png"><img src="images/setup072.png" width="640" height="480" alt="Step 4" /></a></p>
+			<p><a href="images/05/setup004.png"><img src="images/05/setup004.png" width="640" height="480" alt="Step 4" /></a></p>
 		</li>
 		<li><p>Make sure to install the FMS service.</p>
-			<p><a href="images/setup073.png"><img src="images/setup073.png" width="640" height="480" alt="Step 5" /></a></p>
+			<p><a href="images/05/setup005.png"><img src="images/05/setup005.png" width="640" height="480" alt="Step 5" /></a></p>
 		</li>
 		<li><p>This is the main interface for FMS you may want to bookmark it on your browser.</p>
 			<p>Go to the Local Identities page and then switch tabs back to the Freenet interface.</p>
-			<p><a href="images/setup074.png"><img src="images/setup074.png" width="640" height="480" alt="Step 6" /></a></p>
+			<p><a href="images/05/setup006.png"><img src="images/05/setup006.png" width="640" height="480" alt="Step 6" /></a></p>
 		</li>
 		<li><p>At this point we're going to link your WoT identity to your FMS identity so that posts in both places will come from the same identity.</p>
-			<p><a href="images/setup076.png"><img src="images/setup076.png" width="640" height="480" alt="Step 7" /></a></p>
+			<p><a href="images/05/setup007.png"><img src="images/05/setup007.png" width="640" height="480" alt="Step 7" /></a></p>
 		</li>
 		<li><p>Open the Own anonymous identities page.</p>
-			<p><a href="images/setup077.png"><img src="images/setup077.png" width="640" height="480" alt="Step 8" /></a></p>
+			<p><a href="images/05/setup008.png"><img src="images/05/setup008.png" width="640" height="480" alt="Step 8" /></a></p>
 		</li>
 		<li><p>Click on the edit tab to get your keys. You should also have this information backed up somewhere safe after performing step 5 of the <a href="/wot.html">WebOfTrust tutorial</a>. If you didn't do that before, do it now.</p>
-			<p><a href="images/setup078.png"><img src="images/setup078.png" width="640" height="480" alt="Step 9" /></a></p>
+			<p><a href="images/05/setup009.png"><img src="images/05/setup009.png" width="640" height="480" alt="Step 9" /></a></p>
 		</li>
 		<li><p>FMS identity keys are compatible with WoT identity keys except they are written as SSK@ instead of USK@ and the FMS identity does not include the part including and after /WebOfTrust/</p>
 			<p>Using the following code as a template translate your WoT keys into FMS keys and save the resulting file as identities.xml. Copy your name exactly as it is shown on the Web Of Trust identity page.</p>
@@ -107,55 +107,55 @@
  &lt;/Identity&gt;
 &lt;/IdentityExport&gt;</pre>
 			<p>Make sure the format of your keys looks like the example below. They should both start with "SSK@" and end in ",AQECAAE/" (private key) and ",AQACAAE/" (public key).
-			<p><a href="images/setup079.png"><img src="images/setup079.png" width="640" height="480" alt="Step 10" /></a></p>
+			<p><a href="images/05/setup010.png"><img src="images/05/setup010.png" width="640" height="480" alt="Step 10" /></a></p>
 		</li>
 		<li><p>Import the identities.xml file you just created.</p>
-			<p><a href="images/setup080.png"><img src="images/setup080.png" width="640" height="480" alt="Step 11" /></a></p>
+			<p><a href="images/05/setup011.png"><img src="images/05/setup011.png" width="640" height="480" alt="Step 11" /></a></p>
 		</li>
 		<li><p>It will take a few minutes before FMS downloads your identity from the WebOfTrust, but first we need to restart FMS in order for the configuration changes to take effect.</p>
-			<p><a href="images/setup081.png"><img src="images/setup081.png" width="640" height="480" alt="Step 12" /></a></p>
+			<p><a href="images/05/setup012.png"><img src="images/05/setup012.png" width="640" height="480" alt="Step 12" /></a></p>
 		</li>
 		<li><p>You need to announce your identity in FMS just like you did before for the WebOfTrust.</p>
-			<p><a href="images/setup084.png"><img src="images/setup084.png" width="640" height="480" alt="Step 13" /></a></p>
+			<p><a href="images/05/setup013.png"><img src="images/05/setup013.png" width="640" height="480" alt="Step 13" /></a></p>
 		</li>
 		<li><p>The puzzle solving process is similar but FMS also has audio CAPTCHAs in addition to the graphical ones.</p>
-			<p><a href="images/setup085.png"><img src="images/setup085.png" width="640" height="480" alt="Step 14" /></a></p>
+			<p><a href="images/05/setup014.png"><img src="images/05/setup014.png" width="640" height="480" alt="Step 14" /></a></p>
 		</li>
 		<li><p>Like Freemail, FMS also has a web interface but you can also configure Thunderbird as your news reader.</p>
-			<p><a href="images/setup086.png"><img src="images/setup086.png" width="640" height="480" alt="Step 15" /></a></p>
+			<p><a href="images/05/setup015.png"><img src="images/05/setup015.png" width="640" height="480" alt="Step 15" /></a></p>
 		</li>
 		<li><p>Go to the Account Settings page and Add Other Account...</p>
-			<p><a href="images/setup087.png"><img src="images/setup087.png" width="640" height="480" alt="Step 16" /></a></p>
+			<p><a href="images/05/setup016.png"><img src="images/05/setup016.png" width="640" height="480" alt="Step 16" /></a></p>
 		</li>
 		<li><p>This is a Newsgroup account</p>
-			<p><a href="images/setup088.png"><img src="images/setup088.png" width="640" height="480" alt="Step 17" /></a></p>
+			<p><a href="images/05/setup017.png"><img src="images/05/setup017.png" width="640" height="480" alt="Step 17" /></a></p>
 		</li>
 		<li><p>The name you enter here must exactly match your FMS identity name. FMS will ignore the email address so you can enter anything, but you might want to put your Freemail address to make it easier to use Enigmail with this account.</p>
-			<p><a href="images/setup089.png"><img src="images/setup089.png" width="640" height="480" alt="Step 18" /></a></p>
+			<p><a href="images/05/setup018.png"><img src="images/05/setup018.png" width="640" height="480" alt="Step 18" /></a></p>
 		</li>
 		<li><p>FMS listens on the localhost interface.</p>
-			<p><a href="images/setup090.png"><img src="images/setup090.png" width="640" height="480" alt="Step 19" /></a></p>
+			<p><a href="images/05/setup019.png"><img src="images/05/setup019.png" width="640" height="480" alt="Step 19" /></a></p>
 		</li>
 		<li><p>Give the account a meaningful name.</p>
-			<p><a href="images/setup091.png"><img src="images/setup091.png" width="640" height="480" alt="Step 20" /></a></p>
+			<p><a href="images/05/setup020.png"><img src="images/05/setup020.png" width="640" height="480" alt="Step 20" /></a></p>
 		</li>
 		<li><p>That was painless.</p>
-			<p><a href="images/setup092.png"><img src="images/setup092.png" width="640" height="480" alt="Step 21" /></a></p>
+			<p><a href="images/05/setup021.png"><img src="images/05/setup021.png" width="640" height="480" alt="Step 21" /></a></p>
 		</li>
 		<li><p>Before you close this window change the Port to 1119 and make sure to check "Always request authentication when connecting to this server".</p>
-			<p><a href="images/setup093.png"><img src="images/setup093.png" width="640" height="480" alt="Step 22" /></a></p>
+			<p><a href="images/05/setup022.png"><img src="images/05/setup022.png" width="640" height="480" alt="Step 22" /></a></p>
 		</li>
 		<li><p>There won't be much to see here until you subscribe to some newsgroups.</p>
-			<p><a href="images/setup094.png"><img src="images/setup094.png" width="640" height="480" alt="Step 23" /></a></p>
+			<p><a href="images/05/setup023.png"><img src="images/05/setup023.png" width="640" height="480" alt="Step 23" /></a></p>
 		</li>
 		<li><p>Enter your FMS identity name here. No password is required.</p>
-			<p><a href="images/setup095.png"><img src="images/setup095.png" width="640" height="480" alt="Step 24" /></a></p>
+			<p><a href="images/05/setup024.png"><img src="images/05/setup024.png" width="640" height="480" alt="Step 24" /></a></p>
 		</li>
 		<li><p>Choose a few newsgroups that interest you. As time goes on more newsgroups will appear as FMS discovers them so check back from time to time.</p>
-			<p><a href="images/setup096.png"><img src="images/setup096.png" width="640" height="480" alt="Step 25" /></a></p>
+			<p><a href="images/05/setup025.png"><img src="images/05/setup025.png" width="640" height="480" alt="Step 25" /></a></p>
 		</li>
 		<li><p>Now you're ready to make you first post to FMS from Thunderbird. Use the test forum to avoid cluttering up other areas.</p>
-			<p><a href="images/setup097.png"><img src="images/setup097.png" width="640" height="480" alt="Step 26" /></a></p>
+			<p><a href="images/05/setup026.png"><img src="images/05/setup026.png" width="640" height="480" alt="Step 26" /></a></p>
 		</li>
 	</ol>
 
