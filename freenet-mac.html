@@ -106,7 +106,7 @@
 	<li><p>Click 'Next'.</p>
 		<p><a href="images/01b/setup016.png"><img src="images/01b/setup016.png" width="640" height="480" alt="Step 3" /></a></p>
 	</li>
-	<li><p>Enable automatic updates and UPnP and click 'Next'.</p>
+	<li><p>Click 'Next' unless you have a reason to disable UPnP.</p>
 		<p><a href="images/01b/setup017.png"><img src="images/01b/setup017.png" width="640" height="480" alt="Step 4" /></a></p>
 	</li>
 	<li><p>Choose the second option here. If you know other people who use Freenet you can upgrade to darknet mode in the future but for now you need to connect to strangers in order to access the network.</p>
@@ -115,10 +115,10 @@
 	<li><p>Choose "NORMAL" here.</p>
 		<p><a href="images/01b/setup019.png"><img src="images/01b/setup019.png" width="640" height="480" alt="Step 6" /></a></p>
 	</li>
-	<li><p>Choose "LOW" here. The higher levels of security unfortunately do not fully protect your identity if you use the kinds of social networking plugins we will be installing. You should use a whole disk encryption product like <a href="http://www.truecrypt.org/">Truecrypt</a> or FileVault, but setting that up is outside the scope of this guide.</p>
+	<li><p>Choose "LOW" here unless you are already using whole disk encryption, in which case you can choose "NONE". The higher levels of security unfortunately do not fully protect your identity if you use the kinds of social networking plugins we will be installing. You should use a whole disk encryption product like <a href="http://www.truecrypt.org/">Truecrypt</a> or FileVault, but setting that up is outside the scope of this guide.</p>
 		<p><a href="images/01b/setup020.png"><img src="images/01b/setup020.png" width="640" height="480" alt="Step 7" /></a></p>
 	</li>
-	<li><p>The installer will pick a default value based on the size of your hard drive.</p>
+	<li><p>The installer will recommend a default value based on the size of your hard drive. You can use the value it suggests or select something different.</p>
 		<p><a href="images/01b/setup021.png"><img src="images/01b/setup021.png" width="640" height="480" alt="Step 8" /></a></p>
 	</li>
 	<li><p>You have two options to choose from here. If you want to limit bandwidth based on a monthly cap click 'Yes'. Otherwise click 'No' and skip to step 11.</p>
@@ -130,23 +130,30 @@
 	<li><p>Select the right bandwidth limit based on your connection type in your own values.</p>
 		<p><a href="images/01b/setup024.png"><img src="images/01b/setup024.png" width="640" height="480" alt="Step 11" /></a></p>
 	</li>
-	<li><p>Before installing any of the social networking plugins in future steps you should increase the maximum amount of memory your node is allowed to use. Go to the 'Core settings' page under the Configuration menu.</p>
+	<li><p>Your node is now running. Before installing any of the social networking plugins in future steps you should check the maximum amount of memory your node is allowed to use.</p>
 		<p><a href="images/01b/setup025.png"><img src="images/01b/setup025.png" width="640" height="480" alt="Step 12" /></a></p>
 	</li>
-	<li><p>The first option in this menu should be 'Maximum memory usage'. Change this value to 512.</p>
+	<li><p>Go to the "Core settings" page of the Configuration menu.</p>
 		<p><a href="images/01b/setup026.png"><img src="images/01b/setup026.png" width="640" height="480" alt="Step 13" /></a></p>
 	</li>
-	<li><p>Scroll down to the bottom of the page and click 'Apply'.</p>
+	<li><p>The Freenet installer picked a value of "Maximum memory usage" based on the amount of RAM on your computer. Frequently this value is too small to run the plugins that we will be installing in later steps. Make sure this value is at least 512 MB to make sure your node doesn't run out of memory. Symptoms that this value is too small include frequent node crashes and restarts.</p>
+		<p>If you don't see the WRAPPER section here and you've followed the instructions in this guide this is a bug that should be reported. As a workaround, search your computer for the file "wrapper.conf" and open it in a text editor. (you may need to expand the search to hidden and system folders to successfully locate it). Find the line starting with "wrapper.java.maxmemory" and make sure the value is at least 512. Save the file and restart your node.</p>
 		<p><a href="images/01b/setup027.png"><img src="images/01b/setup027.png" width="640" height="480" alt="Step 14" /></a></p>
 	</li>
-	<li><p>Before the change takes effect you must restart the node. Return to the Freenet homepage to do this.</p>
+	<li><p>When you are done scroll to the bottom of the page and click 'Apply'.</p>
 		<p><a href="images/01b/setup028.png"><img src="images/01b/setup028.png" width="640" height="480" alt="Step 15" /></a></p>
 	</li>
-	<li><p>At the bottom of the page there is a button you can use to restart your node.</p>
+	<li><p>Return to the node homepage to access the restart command.</p>
 		<p><a href="images/01b/setup029.png"><img src="images/01b/setup029.png" width="640" height="480" alt="Step 16" /></a></p>
 	</li>
-	<li><p>Confirm that you want to restart and wait for the page to automatically refresh and load the home page.</p>
+	<li><p>Restart the node to update the max memory setting.</p>
 		<p><a href="images/01b/setup030.png"><img src="images/01b/setup030.png" width="640" height="480" alt="Step 17" /></a></p>
+	</li>
+	<li><p>Confirm the restart command.</p>
+		<p><a href="images/01b/setup031.png"><img src="images/01b/setup031.png" width="640" height="480" alt="Step 18" /></a></p>
+	</li>
+	<li><p>Wait until your node finishes reloading to continue to the next step.</p>
+		<p><a href="images/01b/setup032.png"><img src="images/01b/setup032.png" width="640" height="480" alt="Step 19" /></a></p>
 	</li>
 </ol>
 
