@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN">
+<html xml:lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<link rel="stylesheet" href="fsng.css" type="text/css" />
+<link href="favicon.png" type="image/png" />
+	<title>Freenet Social Networking Guide - Etape 3</title>
+	</head>
+<body>
+<div id="logo">
+	<a href="index_fr.html" title="Homepage">
+		<img src="images/header.png" alt="Freenet Social Networking Guide" style="border: none; " />
+	</a>
+</div>
+
+<div id="breadcrumbs">
+<p>Etape 3</p>
+</div>
+
+<div id="navbar"><center><b>Menu</b></center>
+	<ul>
+		<li class="nav1"><a href="freenet_fr.html" title="Step 1: Freenet">
+			Etape 1: Freenet</a>
+		</li>
+		<li class="nav1"><a href="wot_fr.html" title="Step 2: Identité">
+			Etape 2: Identité</a>
+		</li>
+		<li class="nav1"><a href="freemail_fr.html" title="Step 3: Mail">
+			Etape 3: Mail</a>
+		</li>
+		<li class="nav1"><a href="sone_fr.html" title="Step 4: Microblogging">
+			Etape 4: Microblogging</a>
+		</li>
+		<li class="nav1"><a href="fms_fr.html" title="Step 5: Forums">
+			Etape 5: Forums</a>
+		</li>
+		<li class="nav1"><a href="flip_fr.html" title="Step 6: Chat">
+			Etape 6: Chat</a>
+		</li>
+	</ul>
+	<hr />
+	<center><b>Informations complémentaires</b></center>
+	<ul>
+                <li class="nav1"><a href="gpg_fr.html"  title="Ajouter cryptage GPG">
+                        Ajouter cryptage GPG</a>
+                </li>
+               <li class="nav1"><a href="more_fr.html" title="Pour en savoir plus">
+                        Pour en savoir plus</a>
+                </li>
+	</ul>
+	<hr />
+	<ul>
+                <li class="nav1"><a href="contact_fr.html" title="Contacter l'auteur">
+                        Contacter l'auteur</a>
+                </li>
+	</ul>
+</div>
+
+<div id="content">
+	<h1>Step 3: Creating a mail account with Freemail</h1>
+	<p>You must have already created a Web of Trust (WoT) identity in <a href="wot_fr.html">step 2</a> of this guide before proceeding.</p>
+	<h2>Plugin setup</h2>
+	<ol>
+		<li><p>Start by opening the Plugin configuration page.</p>
+			<p><a href="images/03/setup001.png"><img src="images/03/setup001.png" width="640" height="480" alt="Step 1" /></a></p>
+		</li>
+		<li><p>The version of Freemail used in this guide is newer than the official plugin included with Freenet 1419 so we need to install it as if it were an unofficial plugin.</p>
+			<p>Copy the following text into the Plugin Key field and click 'Load'.
+			<pre>CHK@mK3o5KCvCYFDjU9X0PrYkdktX0jppqvZ7Mhcsvt98P4,Zrceoi4rtPefS74ACnUfkomAXqNrwhOytz0N0PtAxKQ,AAMC--8/Freemail-0.2.2.1.jar</pre>
+			<p><a href="images/03/setup002.png"><img src="images/03/setup002.png" width="640" height="480" alt="Step 2" /></a></p>
+		</li>
+		<li><p>When the plugin is loaded log in to Freemail using the new top-level menu.</p>
+			<p><a href="images/03/setup003.png"><img src="images/03/setup003.png" width="640" height="480" alt="Step 3" /></a></p>
+		</li>
+		<li><p>Since you don't have any accounts yet you will be prompted to add one.</p>
+			<p><a href="images/03/setup004.png"><img src="images/03/setup004.png" width="640" height="480" alt="Step 4" /></a></p>
+		</li>
+		<li><p>If you have more than WoT identity choose the one you want to create a Freemail account for. Choose a password and click 'Add account'. Don't forget the password because you'll need it later.</p>
+			<p><a href="images/03/setup005.png"><img src="images/03/setup005.png" width="640" height="480" alt="Step 5" /></a></p>
+		</li>
+		<li><p>Now that you've created an identity you can log in.</p>
+			<p><a href="images/03/setup006.png"><img src="images/03/setup006.png" width="640" height="480" alt="Step 6" /></a></p>
+		</li>
+		<li><p>This is your inbox. The first message contains useful information, including you new Freemail address.</p>
+			<p><a href="images/03/setup007.png"><img src="images/03/setup007.png" width="640" height="480" alt="Step 7" /></a></p>
+		</li>
+		<li><p>The Freemail plugin contains a basic web interface that allows you to send and receive messages. If you want you can use this interface but for full functionality you can set up an external mail client. Continue with this guide for instructions on setting up Thunderbird.</p>
+			<p><a href="images/03/setup008.png"><img src="images/03/setup008.png" width="640" height="480" alt="Step 8" /></a></p>
+		</li>
+	</ol>
+	<h2>Email client setup</h2>
+	<ol>
+		<li><p>If this is the first time you've used Thunderbird it will immediately prompt you to set up an account. If you already have accounts go to the 'Account Settings' menu. Under the 'Account Actions' menu choose "Add Mail Account...'</p>
+			<p>Click past this prompt to configure Thunderbird to access your Freemail account.</p>
+			<p><a href="images/03/setup009.png"><img src="images/03/setup009.png" width="640" height="480" alt="Step 1" /></a></p>
+		</li>
+		<li><p>At this point we need to be careful to avoid leaking your Freemail address. Thunderbird will attempt to find your email settings by DNS lookup and by sending your email address to their servers. This is desirable behavior when anonymity isn't a priority but in this case we must make sure your freemail address is not associated with your IP address. For more information see this freesite: <a href="/USK@dE2h1QeOOcpoMWsLMNrExM3WTV6WVV2dpS71pAOa2m0,cyL8t0Zp4pv~lAdk-NYcfiIsKOABR7MXQqUszrg3Spo,AQACAAE/thunderbird-leak/-3/">thunderbird-leak</a></p>
+			<p>Enter a <b><em>fake</em></b> name, email address and password in this window and click 'Continue'.</p>
+			<p>If you have it installed you can also configure Thunderbird to use Tor as a SOCKS proxy prior to setting up a mail account to prevent your Freemail address from being associated with your IP address.</p>
+			<p><a href="images/03/setup010.png"><img src="images/03/setup010.png" width="640" height="480" alt="Step 2" /></a></p>
+		</li>
+		<li><p>Thunderbird will try to automatically detect your mail server settings but it won't work.</p>
+			<p>Update the "Your name" and "Password" fields here, but leave the "Email address" field alone for now. Choose a name to display on your outgoing emails and enter the email addressed contained in your "Welcome to Freemail" message. Use the same password here as you choose in step of 5 the previous section.</p>
+			<p>Change the Server hostname, Port and Username fields as shown below and click 'Re-test'. The Username should be the Freemail address you received in step 7 of the previous section.</p>
+			<p><a href="images/03/setup011.png"><img src="images/03/setup011.png" width="640" height="480" alt="Step 3" /></a></p>
+		</li>
+		<li>	<p>If you entered everything correctly Thunderbird will successfully detect the rest of the parameters. Click on 'Create Account' to continue.</p>
+			<p><a href="images/03/setup012.png"><img src="images/03/setup012.png" width="640" height="480" alt="Step 4" /></a></p>
+		</li>
+		<li>	<p>This warning occurs because normally it's a bad idea to connect to a mail server over an insecure connection. Since this connection takes place on the localhost interface TLS is not necessary. Click on the checkbox and click 'Create Account' again.</p>
+			<p><a href="images/03/setup013.png"><img src="images/03/setup013.png" width="640" height="480" alt="Step 5" /></a></p>
+		</li>
+		<li>	<p>At this point you should see the Welcome email from your inbox. From now on you can do everything relating to your mail from Thunderbird just like any other email service. Just remember that your node must be running to use your Freemail account.</p>
+			<p>Before you start sending messages, however, access the Account Settings to correct your name and email address.</p>
+			<p><a href="images/03/setup014.png"><img src="images/03/setup014.png" width="640" height="480" alt="Step 6" /></a></p>
+		</li>
+		<li>	<p>Update the "Account Name", "Your Name" and "Email Address fields" to include the correct information for your account as shown:
+			<p><a href="images/03/setup015.png"><img src="images/03/setup015.png" width="640" height="480" alt="Step 7" /></a></p>
+		</li>
+		<li><p>If you ever plan to send messages with non-English characters there is a setting you should change to make sure that your messages display properly.</p>
+			<p>Go to the Thunderbird configuration menu.</p>
+			<p><a href="images/03/setup016.png"><img src="images/03/setup016.png" width="640" height="480" alt="Step 8" /></a></p>
+		</li>
+		<li><p>Under the Advanced tab choose 'Config Editor'.</p>
+			<p><a href="images/03/setup017.png"><img src="images/03/setup017.png" width="640" height="480" alt="Step 9" /></a></p>
+		</li>
+		<li><p>Acknowledge the warning. If you wish, you can uncheck 'Show this warning next time'.</p>
+			<p><a href="images/03/setup018.png"><img src="images/03/setup018.png" width="640" height="480" alt="Step 10" /></a></p>
+		</li>
+		<li><p>Search for "mail.strictly_mime" and double click to change the value to 'true'.</p>
+			<p><a href="images/03/setup019.png"><img src="images/03/setup019.png" width="640" height="480" alt="Step 11" /></a></p>
+		</li>
+	</ol>
+
+<p>The next thing to configure is <a href="sone_fr.html">Sone</a>.</p>
+</div>
+
+<br clear="both" />
+
+<div id="footer">
+<a href="bitcoin:1M81ktH32o1gv4DKvbY7RPnaRiq1oPFvW7?label=FSNG">1M81ktH32o1gv4DKvbY7RPnaRiq1oPFvW7<img src="images/bitcoin.png" /></a>
+</div>
+</body>
+</html>
