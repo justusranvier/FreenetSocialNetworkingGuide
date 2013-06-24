@@ -1,11 +1,11 @@
 ﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN">
 <html xml:lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text_en.html; charset=utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 <link rel="stylesheet" href="fsng.css" type="text/css" />
 <link href="favicon.png" type="image/png" />
-	<title>Freenet Social Networking Guide - Step 5</title>
+	<title>Freenet Social Networking Guide</title>
 	</head>
 <body>
 <div id="logo">
@@ -15,7 +15,7 @@
 </div>
 
 <div id="breadcrumbs">
-<p>Step 5</p>
+<p>Home</p>
 </div>
 
 <div id="navbar"><center><b>Main Series</b></center>
@@ -58,109 +58,75 @@
 </div>
 
 <div id="content">
-	<h1>Step 5: Joining discussion forums with FMS</h1>
-	<p>If you've been paying attention to the menu items in your node interface you will have seen mention of Freetalk as the official forum system.</p>
-	<p>Don't install Freetalk.</p>
-	<p>Freetalk is not ready for use. It doesn't work very well yet and consumes a lot of resources. A leading cause of people complaining that Freenet runs bogs down their computer is that they have installed Freetalk.</p>
-	<p>Instead, follow these instructions to install FMS:</p>
-	<ol>
-		<li><p>Unlike the other components we have installed so far, FMS works best as a separate application instead of a node plugin. You need to go to the FMS Freesite and <a href="/USK@0npnMrqZNKRCRoGojZV93UNHCMN-6UU3rRSAmP6jNLE,~BG-edFtdCC1cSH4O3BWdeIYa8Sw5DfyrSV-TKdO5ec,AQACAAE/fms/-137/download.htm">download</a> the correct version for your system.</p>
-			<p><a href="images/05/setup001.png"><img src="images/05/setup001.png" width="640" height="480" alt="Step 1" /></a></p>
-		</li>
-		<li><p>The content filter won't allow you to display this file through the browser by default so save it to the Freenet download directory. Make sure to uncheck "Filter data".</p>
-			<p><a href="images/05/setup002.png"><img src="images/05/setup002.png" width="640" height="480" alt="Step 2" /></a></p>
-		</li>
-		<li><p>Run the installer.</p>
-			<p><a href="images/05/setup003.png"><img src="images/05/setup003.png" width="640" height="480" alt="Step 3" /></a></p>
-		</li>
-		<li><p>You can choose any installation directory you want but the default is probably best.</p>
-			<p><a href="images/05/setup004.png"><img src="images/05/setup004.png" width="640" height="480" alt="Step 4" /></a></p>
-		</li>
-		<li><p>Make sure to install the FMS service.</p>
-			<p><a href="images/05/setup005.png"><img src="images/05/setup005.png" width="640" height="480" alt="Step 5" /></a></p>
-		</li>
-		<li><p>This is the main interface for FMS you may want to bookmark it on your browser.</p>
-			<p>Go to the Local Identities page and then switch tabs back to the Freenet interface.</p>
-			<p><a href="images/05/setup006.png"><img src="images/05/setup006.png" width="640" height="480" alt="Step 6" /></a></p>
-		</li>
-		<li><p>At this point we're going to link your WoT identity to your FMS identity so that posts in both places will come from the same identity.</p>
-			<p><a href="images/05/setup007.png"><img src="images/05/setup007.png" width="640" height="480" alt="Step 7" /></a></p>
-		</li>
-		<li><p>Open the Own anonymous identities page.</p>
-			<p><a href="images/05/setup008.png"><img src="images/05/setup008.png" width="640" height="480" alt="Step 8" /></a></p>
-		</li>
-		<li><p>Click on the edit tab to get your keys. You should also have this information backed up somewhere safe after performing step 5 of the <a href="/wot_en.html">WebOfTrust tutorial</a>. If you didn't do that before, do it now.</p>
-			<p><a href="images/05/setup009.png"><img src="images/05/setup009.png" width="640" height="480" alt="Step 9" /></a></p>
-		</li>
-		<li><p>FMS identity keys are compatible with WoT identity keys except they are written as SSK@ instead of USK@ and the FMS identity does not include the part including and after /WebOfTrust/</p>
-			<p>Using the following code as a template translate your WoT keys into FMS keys and save the resulting file as identities.xml. Copy your name exactly as it is shown on the Web Of Trust identity page.</p>
-			 <pre>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;IdentityExport&gt;
- &lt;Identity&gt;
-  &lt;Name&gt;&lt;![CDATA[<b>NAME</b>]]&gt;&lt;/Name&gt;
-  &lt;PublicKey&gt;SSK@<b>TRANSLATED_REQUEST_URI</b>/&lt;/PublicKey&gt;
-  &lt;PrivateKey&gt;SSK@<b>TRANSLATED_INSERT_URI</b>/&lt;/PrivateKey&gt;
-  &lt;SingleUse&gt;false&lt;/SingleUse&gt;
-  &lt;PublishTrustList&gt;false&lt;/PublishTrustList&gt;
-  &lt;PublishBoardList&gt;false&lt;/PublishBoardList&gt;
-  &lt;PublishFreesite&gt;false&lt;/PublishFreesite&gt;
- &lt;/Identity&gt;
-&lt;/IdentityExport&gt;</pre>
-			<p>Make sure the format of your keys looks like the example below. They should both start with "SSK@" and end in ",AQECAAE/" (private key) and ",AQACAAE/" (public key).
-			<p><a href="images/05/setup010.png"><img src="images/05/setup010.png" width="640" height="480" alt="Step 10" /></a></p>
-		</li>
-		<li><p>Import the identities.xml file you just created.</p>
-			<p><a href="images/05/setup011.png"><img src="images/05/setup011.png" width="640" height="480" alt="Step 11" /></a></p>
-		</li>
-		<li><p>It will take a few minutes before FMS downloads your identity from the WebOfTrust, but first we need to restart FMS in order for the configuration changes to take effect.</p>
-			<p><a href="images/05/setup012.png"><img src="images/05/setup012.png" width="640" height="480" alt="Step 12" /></a></p>
-		</li>
-		<li><p>You need to announce your identity in FMS just like you did before for the WebOfTrust.</p>
-			<p><a href="images/05/setup013.png"><img src="images/05/setup013.png" width="640" height="480" alt="Step 13" /></a></p>
-		</li>
-		<li><p>The puzzle solving process is similar but FMS also has audio CAPTCHAs in addition to the graphical ones.</p>
-			<p><a href="images/05/setup014.png"><img src="images/05/setup014.png" width="640" height="480" alt="Step 14" /></a></p>
-		</li>
-		<li><p>Like Freemail, FMS also has a web interface but you can also configure Thunderbird as your news reader.</p>
-			<p><a href="images/05/setup015.png"><img src="images/05/setup015.png" width="640" height="480" alt="Step 15" /></a></p>
-		</li>
-		<li><p>Go to the Account Settings page and Add Other Account...</p>
-			<p><a href="images/05/setup016.png"><img src="images/05/setup016.png" width="640" height="480" alt="Step 16" /></a></p>
-		</li>
-		<li><p>This is a Newsgroup account</p>
-			<p><a href="images/05/setup017.png"><img src="images/05/setup017.png" width="640" height="480" alt="Step 17" /></a></p>
-		</li>
-		<li><p>The name you enter here must exactly match your FMS identity name. FMS will ignore the email address so you can enter anything, but you might want to put your Freemail address to make it easier to use Enigmail with this account.</p>
-			<p><a href="images/05/setup018.png"><img src="images/05/setup018.png" width="640" height="480" alt="Step 18" /></a></p>
-		</li>
-		<li><p>FMS listens on the localhost interface.</p>
-			<p><a href="images/05/setup019.png"><img src="images/05/setup019.png" width="640" height="480" alt="Step 19" /></a></p>
-		</li>
-		<li><p>Give the account a meaningful name.</p>
-			<p><a href="images/05/setup020.png"><img src="images/05/setup020.png" width="640" height="480" alt="Step 20" /></a></p>
-		</li>
-		<li><p>That was painless.</p>
-			<p><a href="images/05/setup021.png"><img src="images/05/setup021.png" width="640" height="480" alt="Step 21" /></a></p>
-		</li>
-		<li><p>Before you close this window change the Port to 1119 and make sure to check "Always request authentication when connecting to this server".</p>
-			<p><a href="images/05/setup022.png"><img src="images/05/setup022.png" width="640" height="480" alt="Step 22" /></a></p>
-		</li>
-		<li><p>There won't be much to see here until you subscribe to some newsgroups.</p>
-			<p><a href="images/05/setup023.png"><img src="images/05/setup023.png" width="640" height="480" alt="Step 23" /></a></p>
-		</li>
-		<li><p>Enter your FMS identity name here. No password is required.</p>
-			<p><a href="images/05/setup024.png"><img src="images/05/setup024.png" width="640" height="480" alt="Step 24" /></a></p>
-		</li>
-		<li><p>Choose a few newsgroups that interest you. As time goes on more newsgroups will appear as FMS discovers them so check back from time to time.</p>
-			<p><a href="images/05/setup025.png"><img src="images/05/setup025.png" width="640" height="480" alt="Step 25" /></a></p>
-		</li>
-		<li><p>Now you're ready to make you first post to FMS from Thunderbird. Use the test forum to avoid cluttering up other areas.</p>
-			<p><a href="images/05/setup026.png"><img src="images/05/setup026.png" width="640" height="480" alt="Step 26" /></a></p>
-		</li>
-	</ol>
-
-<p>This is just a basic tutorial that does not explain all, or even a significant number of, the features available in FMS. I recommend that you read the <a href="/USK@0npnMrqZNKRCRoGojZV93UNHCMN-6UU3rRSAmP6jNLE,~BG-edFtdCC1cSH4O3BWdeIYa8Sw5DfyrSV-TKdO5ec,AQACAAE/fms/-134/operation.htm">official</a> documentation, especially with regards to how <a href="/USK@0npnMrqZNKRCRoGojZV93UNHCMN-6UU3rRSAmP6jNLE,~BG-edFtdCC1cSH4O3BWdeIYa8Sw5DfyrSV-TKdO5ec,AQACAAE/fms/-134/trust.htm">trust levels</a> work.</p>
-<p>You can also find additional documentation on the <a href="more_en.html">Further reading</a> page.</p>
+	<h1>The newcomer's guide to anonymous communication on Freenet</h1>
+	<p>This is tutorial is designed for anyone who wants to use Freenet primarily for anonymous and censorship-resistant social networking and truly private email.</p>
+	<p>Some of the default settings for a Freenet install are not optimal for this usage and many of the steps are not documented anywhere so this is an attempt to bring all the information into one place.</p>
+	<p>Some of the plugins we will be using require more resources than what a typical installation of Freenet needs. You should have at least 2 GiB of memory on the computer you are using.</p>
+	<p>Use the navigation links on the right side of the screen to get started.</p>
+	<div class="container">
+		<div class="boxhead">
+			<h2>News</h2>
+		</div>
+		<div class="innerbox">
+		<!--  hack necessary because putting padding and width: 100% on the same element confuses firefox & konqueror (at least)  -->
+		<div class="innerinnerbox">
+			<h3>Monday, 24th June, 2013</h3><p>Updated FMS version.</p>
+			<p>Current software versions:</p>
+			<ul>
+				<li>Freenet: 1444</li>
+				<li>WebOfTrust: 12</li>
+				<li>Freemail: 0.2.2.1</li>
+				<li>Sone: 0.8.4</li>
+				<li>FMS: 0.3.71</li>
+				<li>FLIP: 0.1.7</li>
+				<li>Thunderbird: 13</li>
+				<li>KVIrc: 4.2.0</li>
+				<li>Gpg4win 2.1.1</li>
+			</ul>
+		</div>
+		</div>
+		<div class="innerbox">
+		<!--  hack necessary because putting padding and width: 100% on the same element confuses firefox & konqueror (at least)  -->
+		<div class="innerinnerbox">
+			<h3>Thursday, 14th February, 2013</h3><p>Merged changes and updated <a href="contact_en.html">contact</a> page to thank recent contributors for their help with this guide.</p>
+			<p>Current software versions:</p>
+			<ul>
+				<li>Freenet: 1433</li>
+				<li>WebOfTrust: 12</li>
+				<li>Freemail: 0.2.2.1</li>
+				<li>Sone: 0.8.4</li>
+				<li>FMS: 0.3.70</li>
+				<li>FLIP: 0.1.7</li>
+				<li>Thunderbird: 13</li>
+				<li>KVIrc: 4.2.0</li>
+				<li>Gpg4win 2.1.1</li>
+			</ul>
+		</div>
+		</div>
+		<div class="innerbox">
+		<!--  hack necessary because putting padding and width: 100% on the same element confuses firefox & konqueror (at least)  -->
+		<div class="innerinnerbox">
+			<h3>Tuesday, 5th February, 2013</h3><p>Another day, another new version of FLIP.</p>
+			<p>Current software versions:</p>
+			<ul>
+				<li>Freenet: 1432</li>
+				<li>WebOfTrust: 12</li>
+				<li>Freemail: 0.2.2.1</li>
+				<li>Sone: 0.8.4</li>
+				<li>FMS: 0.3.70</li>
+				<li>FLIP: 0.1.7</li>
+				<li>Thunderbird: 13</li>
+				<li>KVIrc: 4.2.0</li>
+				<li>Gpg4win 2.1.1</li>
+			</ul>
+		</div>
+		</div>
+		<div class="innerbox">
+		<div class="innerinnerbox">
+			<p><a href="news_en.html">Old news</a></p>
+		</div>
+		</div>
+	</div>
 </div>
 
 <br clear="both" />

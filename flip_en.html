@@ -1,11 +1,11 @@
 ﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN">
 <html xml:lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text_en.html; charset=utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 <link rel="stylesheet" href="fsng.css" type="text/css" />
 <link href="favicon.png" type="image/png" />
-	<title>Freenet Social Networking Guide - Step 6</title>
+	<title>Freenet Social Networking Guide</title>
 	</head>
 <body>
 <div id="logo">
@@ -15,7 +15,7 @@
 </div>
 
 <div id="breadcrumbs">
-<p>Step 6</p>
+<p>Home</p>
 </div>
 
 <div id="navbar"><center><b>Main Series</b></center>
@@ -58,96 +58,75 @@
 </div>
 
 <div id="content">
-	<h1>Step 6: (nearly) Instant Messaging and Chat with FLIP</h1>
-	<p>FLIP is the Freenet Lightweight IRC Program. It can be used for instant messaging with latencies of approximately 30 seconds.</p>
-	<ol>
-		<li><p>The <a href="USK@pGQPA-9PcFiE3A2tCuCjacK165UaX07AQYw98iDQrNA,8gwQ67ytBNR03hNj7JU~ceeew22HVq6G50dcEeMcgks,AQACAAE/flip/11/">official freesite</a> for FLIP contains a Freenet plugin that works for Windows or Linux. OS X is not supported by this guide at the moment.</p>
-			<p><a href="images/06/setup001.png"><img src="images/06/setup001.png" width="640" height="480" alt="Step 1" /></a></p>
-		</li>
-		<li><p>Go to your node's plugin configuration page and enter the key for the FLIP plugin:</p>
-			<p><pre>CHK@1G6p~0bUt19pG4abKcTCzmjt7rq941NaCN4Z57vR4lg,teUIaoH8KP~XwJngYROBQ4lT5rwmEaZEjmyvfJb14Y4,AAMC--8/FLIP-plugin-0.1.7.jar</pre></p>
-			<p><a href="images/06/setup002.png"><img src="images/06/setup002.png" width="640" height="480" alt="Step 2" /></a></p>
-		</li>
-		<li><p>FLIP doesn't create any menu items in the web interface. As soon as the plugin loads it starts listening on the localhost interface.</p>
-			<p><a href="images/06/setup003.png"><img src="images/06/setup003.png" width="640" height="480" alt="Step 3" /></a></p>
-		</li>
-		<li><p>In order to use FLIP you'll need an IRC client, ideally separate from one you use for other IRC networks. This guide will use <a href="http://www.kvirc.net">KVIrc</a></p>
-			<p>Go to the download page and select the appropriate package for your system.</p>
-			<p><a href="images/06/setup004.png"><img src="images/06/setup004.png" width="640" height="480" alt="Step 4" /></a></p>
-		</li>
-		<li><p>After the installer finished downloading, run it.</p>
-			<p><a href="images/06/setup005.png"><img src="images/06/setup005.png" width="640" height="480" alt="Step 5" /></a></p>
-		</li>
-		<li><p>Choose the installation language.</p>
-			<p><a href="images/06/setup006.png"><img src="images/06/setup006.png" width="640" height="480" alt="Step 6" /></a></p>
-		</li>
-		<li><p>Agree to the license terms.</p>
-			<p><a href="images/06/setup007.png"><img src="images/06/setup007.png" width="640" height="480" alt="Step 7" /></a></p>
-		</li>
-		<li><p>Pick the shortcuts you want installed.</p>
-			<p><a href="images/06/setup008.png"><img src="images/06/setup008.png" width="640" height="480" alt="Step 8" /></a></p>
-		</li>
-		<li><p>Now you're ready to actually install KVIrc.</p>
-			<p><a href="images/06/setup009.png"><img src="images/06/setup009.png" width="640" height="480" alt="Step 9" /></a></p>
-		</li>
-		<li><p>When the installed is finished click 'Finish' to start the setup wizard.</p>
-			<p><a href="images/06/setup010.png"><img src="images/06/setup010.png" width="640" height="480" alt="Step 10" /></a></p>
-		</li>
-		<li><p>This guide will assume that you don't have any previous setting to import.</p>
-			<p><a href="images/06/setup011.png"><img src="images/06/setup011.png" width="640" height="480" alt="Step 11" /></a></p>
-		</li>
-		<li><p>Just in case you've changed your mind, agree to the license again.</p>
-			<p><a href="images/06/setup012.png"><img src="images/06/setup012.png" width="640" height="480" alt="Step 12" /></a></p>
-		</li>
-		<li><p>The default settings should be sufficient here.</p>
-			<p><a href="images/06/setup013.png"><img src="images/06/setup013.png" width="640" height="480" alt="Step 13" /></a></p>
-		</li>
-		<li><p>Choose a nickname here. Unlike the other plugins we've used so far this nickname won't be tied to your WoT identity. You can choose anything you want here.</p>
-			<p><a href="images/06/setup014.png"><img src="images/06/setup014.png" width="640" height="480" alt="Step 14" /></a></p>
-		</li>
-		<li><p>Most people will want the default theme but if you prefer reversed colors you can choose 'Minimalist'.</p>
-			<p><a href="images/06/setup015.png"><img src="images/06/setup015.png" width="640" height="480" alt="Step 15" /></a></p>
-		</li>
-		<li><p>You probably don't want KVIrc to be the default IRC client because this client should only be used for Freenet.</p>
-			<p><a href="images/06/setup016.png"><img src="images/06/setup016.png" width="640" height="480" alt="Step 16" /></a></p>
-		</li>
-		<li><p>The server list comes populated with several common IRC networks and servers. Since we won't be using any of them click on the 'New Network' button.</p>
-			<p><a href="images/06/setup017.png"><img src="images/06/setup017.png" width="640" height="480" alt="Step 17" /></a></p>
-		</li>
-		<li><p>Fill in the network name (FLIP) and then click 'New Server'.</p>
-			<p><a href="images/06/setup018.png"><img src="images/06/setup018.png" width="640" height="480" alt="Step 18" /></a></p>
-		</li>
-		<li><p>Change the server name to 'localhost' and clicked on the 'Advanced' button.</p>
-			<p><a href="images/06/setup019.png"><img src="images/06/setup019.png" width="640" height="480" alt="Step 19" /></a></p>
-		</li>
-		<li><p>On the Connection tab enable the checkbox to connect to this server at startup and click 'OK'.</p>
-			<p><a href="images/06/setup020.png"><img src="images/06/setup020.png" width="640" height="480" alt="Step 20" /></a></p>
-		</li>
-		<li><p>Uncheck the 'Show this dialog box at startup' since we just configured KVIrc to connect to FLIP at startup. Then click 'Connect Now' to start.</p>
-			<p><a href="images/06/setup021.png"><img src="images/06/setup021.png" width="640" height="480" alt="Step 21" /></a></p>
-		</li>
-		<li><p>This is another dialog box you probably don't want to see every time you start up the program. Join a few channels here and click 'Close'. #freenet and #test are good ones to join at a minimum.</p>
-			<p>#test normally contains an IRC bot that you can use to test your latency.</p>
-			<p><a href="images/06/setup022.png"><img src="images/06/setup022.png" width="640" height="480" alt="Step 22" /></a></p>
-		</li>
-		<li><p>If you'd like to see what other channels are available, click on 'Get Channel List'.</p>
-			<p><a href="images/06/setup023.png"><img src="images/06/setup023.png" width="640" height="480" alt="Step 23" /></a></p>
-		</li>
-		<li><p>Click on the 'Request List' button to get a list of all channels FLIP has seen.</p>
-			<p><a href="images/06/setup024.png"><img src="images/06/setup024.png" width="640" height="480" alt="Step 24a" /></a></p>
-			<p><a href="images/06/setup025.png"><img src="images/06/setup025.png" width="640" height="480" alt="Step 24b" /></a></p>
-		</li>
-		<li><p>You probably don't want to join your favorite channels manually every time you start KVIrc so go to the 'Configure Servers' menu to set up auto loading.</p>
-			<p><a href="images/06/setup026.png"><img src="images/06/setup026.png" width="640" height="480" alt="Step 25" /></a></p>
-		</li>
-		<li><p>Select the FLIP network and click on the 'Advanced' button.</p>
-			<p><a href="images/06/setup027.png"><img src="images/06/setup027.png" width="640" height="480" alt="Step 26" /></a></p>
-		</li>
-		<li><p>On the Join Channels tab add every channel that you want to automatically log in to when you start KVIrc.</p>
-			<p><a href="images/06/setup028.png"><img src="images/06/setup028.png" width="640" height="480" alt="Step 27" /></a></p>
-		</li>
-	</ol>
-	<p>This concludes the Freenet Social Networking Guide. By now you have secure mail, microblogging, forum and instant messaging capability.</p>
+	<h1>The newcomer's guide to anonymous communication on Freenet</h1>
+	<p>This is tutorial is designed for anyone who wants to use Freenet primarily for anonymous and censorship-resistant social networking and truly private email.</p>
+	<p>Some of the default settings for a Freenet install are not optimal for this usage and many of the steps are not documented anywhere so this is an attempt to bring all the information into one place.</p>
+	<p>Some of the plugins we will be using require more resources than what a typical installation of Freenet needs. You should have at least 2 GiB of memory on the computer you are using.</p>
+	<p>Use the navigation links on the right side of the screen to get started.</p>
+	<div class="container">
+		<div class="boxhead">
+			<h2>News</h2>
+		</div>
+		<div class="innerbox">
+		<!--  hack necessary because putting padding and width: 100% on the same element confuses firefox & konqueror (at least)  -->
+		<div class="innerinnerbox">
+			<h3>Monday, 24th June, 2013</h3><p>Updated FMS version.</p>
+			<p>Current software versions:</p>
+			<ul>
+				<li>Freenet: 1444</li>
+				<li>WebOfTrust: 12</li>
+				<li>Freemail: 0.2.2.1</li>
+				<li>Sone: 0.8.4</li>
+				<li>FMS: 0.3.71</li>
+				<li>FLIP: 0.1.7</li>
+				<li>Thunderbird: 13</li>
+				<li>KVIrc: 4.2.0</li>
+				<li>Gpg4win 2.1.1</li>
+			</ul>
+		</div>
+		</div>
+		<div class="innerbox">
+		<!--  hack necessary because putting padding and width: 100% on the same element confuses firefox & konqueror (at least)  -->
+		<div class="innerinnerbox">
+			<h3>Thursday, 14th February, 2013</h3><p>Merged changes and updated <a href="contact_en.html">contact</a> page to thank recent contributors for their help with this guide.</p>
+			<p>Current software versions:</p>
+			<ul>
+				<li>Freenet: 1433</li>
+				<li>WebOfTrust: 12</li>
+				<li>Freemail: 0.2.2.1</li>
+				<li>Sone: 0.8.4</li>
+				<li>FMS: 0.3.70</li>
+				<li>FLIP: 0.1.7</li>
+				<li>Thunderbird: 13</li>
+				<li>KVIrc: 4.2.0</li>
+				<li>Gpg4win 2.1.1</li>
+			</ul>
+		</div>
+		</div>
+		<div class="innerbox">
+		<!--  hack necessary because putting padding and width: 100% on the same element confuses firefox & konqueror (at least)  -->
+		<div class="innerinnerbox">
+			<h3>Tuesday, 5th February, 2013</h3><p>Another day, another new version of FLIP.</p>
+			<p>Current software versions:</p>
+			<ul>
+				<li>Freenet: 1432</li>
+				<li>WebOfTrust: 12</li>
+				<li>Freemail: 0.2.2.1</li>
+				<li>Sone: 0.8.4</li>
+				<li>FMS: 0.3.70</li>
+				<li>FLIP: 0.1.7</li>
+				<li>Thunderbird: 13</li>
+				<li>KVIrc: 4.2.0</li>
+				<li>Gpg4win 2.1.1</li>
+			</ul>
+		</div>
+		</div>
+		<div class="innerbox">
+		<div class="innerinnerbox">
+			<p><a href="news_en.html">Old news</a></p>
+		</div>
+		</div>
+	</div>
 </div>
 
 <br clear="both" />

@@ -1,11 +1,11 @@
 ﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN">
 <html xml:lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text_en.html; charset=utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 <link rel="stylesheet" href="fsng.css" type="text/css" />
 <link href="favicon.png" type="image/png" />
-	<title>Freenet Social Networking Guide - Step 1</title>
+	<title>Freenet Social Networking Guide</title>
 	</head>
 <body>
 <div id="logo">
@@ -15,7 +15,7 @@
 </div>
 
 <div id="breadcrumbs">
-<p>Step 1</p>
+<p>Home</p>
 </div>
 
 <div id="navbar"><center><b>Main Series</b></center>
@@ -58,107 +58,75 @@
 </div>
 
 <div id="content">
-	<h1>Step 1: Installing and configuring your Freenet node</h1>
-	<br />
-	<p>Before you get started make sure you have a reliable browser and mail client installed. This guide will use <a href="https://www.mozilla.org/firefox/">Firefox</a> and <a href="https://www.mozilla.org/thunderbird">Thunderbird</a>.</p>
-	<br />
-	<p><a href="freenet-win_en.html"><img src="images/windows.png" alt="Windows instructions" class="vcenter" /></a>To view instructions for installing Freenet on Windows <a href="freenet-win.html#OS">click here</a>.</p>
-	<p><a href="freenet-mac_en.html"><img src="images/mac.png" alt="Mac OS X instructions" class="vcenter" /></a>To view instructions for installing Freenet on Mac OS X <a href="freenet-mac.html#OS">click here</a>.</p></a>
-	<p><a href="freenet-linux_en.html"><img src="images/linux.png" alt="Linux instructions" class="vcenter" /></a>To view instructions for installing Freenet on Ubuntu Linux <a href="freenet-linux.html#OS">click here</a>.</p></a>
-	<a name="OS"><h2>Freenet Installation for Mac OS X</h2></a>
-<ol>
-	<li><p>Download and run the <a href="https://freenetproject.org/">Freenet Installer</a></p>
-		<p><a href="images/01b/setup001.png"><img src="images/01b/setup001.png" width="640" height="480" alt="Step 1" /></a></p>
-	</li>
-	<li><p>If you don't already have Java installed you'll be prompted to do that first.</p>
-		<p><a href="images/01b/setup002.png"><img src="images/01b/setup002.png" width="640" height="480" alt="Step 2" /></a></p>
-	</li>
-	<li><p>If Java is already installed make sure it is up to date.</p>
-		<p><a href="images/01b/setup003.png"><img src="images/01b/setup003.png" width="640" height="480" alt="Step 3" /></a></p>
-	</li>
-	<li><p>Enable Web Start to launch the Freenet installer.</p>
-		<p><a href="images/01b/setup004.png"><img src="images/01b/setup004.png" width="640" height="480" alt="Step 4" /></a></p>
-	</li>
-	<li><p>Click 'Allow' here.</p>
-		<p><a href="images/01b/setup005.png"><img src="images/01b/setup005.png" width="640" height="480" alt="Step 5" /></a></p>
-	</li>
-	<li><p>Choose the language you'd like to use.</p>
-		<p><a href="images/01b/setup006.png"><img src="images/01b/setup006.png" width="640" height="480" alt="Step 6" /></a></p>
-	</li>
-	<li><p>The next remaining screens do not require any interaction other than clicking 'Next' unless you want to change the installation directory.</p>
-		<p><a href="images/01b/setup007.png"><img src="images/01b/setup007.png" width="640" height="480" alt="Step 7a" /></a></p>
-		<p><a href="images/01b/setup008.png"><img src="images/01b/setup008.png" width="640" height="480" alt="Step 7b" /></a></p>
-		<p><a href="images/01b/setup009.png"><img src="images/01b/setup009.png" width="640" height="480" alt="Step 7c" /></a></p>
-		<p><a href="images/01b/setup010.png"><img src="images/01b/setup010.png" width="640" height="480" alt="Step 7d" /></a></p>
-		<p><a href="images/01b/setup011.png"><img src="images/01b/setup011.png" width="640" height="480" alt="Step 7e" /></a></p>
-		<p><a href="images/01b/setup012.png"><img src="images/01b/setup012.png" width="640" height="480" alt="Step 7e" /></a></p>
-		<p><a href="images/01b/setup013.png"><img src="images/01b/setup013.png" width="640" height="480" alt="Step 7e" /></a></p>
-	</li>
-</ol>
-<a name="config"><h2>Freenet Configuration</h2></a>
-<ol>
-	<li><p>You should now see the setup wizard. Click 'Choose custom security'.</p>
-		<p><a href="images/01b/setup014.png"><img src="images/01b/setup014.png" width="640" height="480" alt="Step 1" /></a></p>
-	</li>
-	<li><p>You should always browse Freenet in Private Browsing or Incognito modes. If you aren't already do so now. Remember to copy the URL and paste it back into the address bar.</p>
-		<p><a href="images/01b/setup015.png"><img src="images/01b/setup015.png" width="640" height="480" alt="Step 2" /></a></p>
-	</li>
-	<li><p>Click 'Next'.</p>
-		<p><a href="images/01b/setup016.png"><img src="images/01b/setup016.png" width="640" height="480" alt="Step 3" /></a></p>
-	</li>
-	<li><p>Click 'Next' unless you have a reason to disable UPnP.</p>
-		<p><a href="images/01b/setup017.png"><img src="images/01b/setup017.png" width="640" height="480" alt="Step 4" /></a></p>
-	</li>
-	<li><p>Choose the second option here. If you know other people who use Freenet you can upgrade to darknet mode in the future but for now you need to connect to strangers in order to access the network.</p>
-		<p><a href="images/01b/setup018.png"><img src="images/01b/setup018.png" width="640" height="480" alt="Step 5" /></a></p>
-	</li>
-	<li><p>Choose "NORMAL" here.</p>
-		<p><a href="images/01b/setup019.png"><img src="images/01b/setup019.png" width="640" height="480" alt="Step 6" /></a></p>
-	</li>
-	<li><p>Choose "LOW" here unless you are already using whole disk encryption, in which case you can choose "NONE". The higher levels of security unfortunately do not fully protect your identity if you use the kinds of social networking plugins we will be installing. You should use a whole disk encryption product like <a href="http://www.truecrypt.org/">Truecrypt</a> or FileVault, but setting that up is outside the scope of this guide.</p>
-		<p><a href="images/01b/setup020.png"><img src="images/01b/setup020.png" width="640" height="480" alt="Step 7" /></a></p>
-	</li>
-	<li><p>The installer will recommend a default value based on the size of your hard drive. You can use the value it suggests or select something different.</p>
-		<p><a href="images/01b/setup021.png"><img src="images/01b/setup021.png" width="640" height="480" alt="Step 8" /></a></p>
-	</li>
-	<li><p>You have two options to choose from here. If you want to limit bandwidth based on a monthly cap click 'Yes'. Otherwise click 'No' and skip to step 11.</p>
-		<p><a href="images/01b/setup022.png"><img src="images/01b/setup022.png" width="640" height="480" alt="Step 9" /></a></p>
-	</li>
-	<li><p>'Select' your monthly data cap from the options provided or type a value into the last box. Skip to step 12.</p>
-		<p><a href="images/01b/setup023.png"><img src="images/01b/setup023.png" width="640" height="480" alt="Step 10" /></a></p>
-	</li>
-	<li><p>Select the right bandwidth limit based on your connection type in your own values.</p>
-		<p><a href="images/01b/setup024.png"><img src="images/01b/setup024.png" width="640" height="480" alt="Step 11" /></a></p>
-	</li>
-	<li><p>Your node is now running. Before installing any of the social networking plugins in future steps you should check the maximum amount of memory your node is allowed to use.</p>
-		<p><a href="images/01b/setup025.png"><img src="images/01b/setup025.png" width="640" height="480" alt="Step 12" /></a></p>
-	</li>
-	<li><p>Go to the "Core settings" page of the Configuration menu.</p>
-		<p><a href="images/01b/setup026.png"><img src="images/01b/setup026.png" width="640" height="480" alt="Step 13" /></a></p>
-	</li>
-	<li><p>The Freenet installer picked a value of "Maximum memory usage" based on the amount of RAM on your computer. Frequently this value is too small to run the plugins that we will be installing in later steps. Make sure this value is at least 512 MB to make sure your node doesn't run out of memory. Symptoms that this value is too small include frequent node crashes and restarts.</p>
-		<p>If you don't see the WRAPPER section here and you've followed the instructions in this guide this is a bug that should be reported. As a workaround, search your computer for the file "wrapper.conf" and open it in a text editor. (you may need to expand the search to hidden and system folders to successfully locate it). Find the line starting with "wrapper.java.maxmemory" and make sure the value is at least 512. Save the file and restart your node.</p>
-		<p><a href="images/01b/setup027.png"><img src="images/01b/setup027.png" width="640" height="480" alt="Step 14" /></a></p>
-	</li>
-	<li><p>When you are done scroll to the bottom of the page and click 'Apply'.</p>
-		<p><a href="images/01b/setup028.png"><img src="images/01b/setup028.png" width="640" height="480" alt="Step 15" /></a></p>
-	</li>
-	<li><p>Return to the node homepage to access the restart command.</p>
-		<p><a href="images/01b/setup029.png"><img src="images/01b/setup029.png" width="640" height="480" alt="Step 16" /></a></p>
-	</li>
-	<li><p>Restart the node to update the max memory setting.</p>
-		<p><a href="images/01b/setup030.png"><img src="images/01b/setup030.png" width="640" height="480" alt="Step 17" /></a></p>
-	</li>
-	<li><p>Confirm the restart command.</p>
-		<p><a href="images/01b/setup031.png"><img src="images/01b/setup031.png" width="640" height="480" alt="Step 18" /></a></p>
-	</li>
-	<li><p>Wait until your node finishes reloading to continue to the next step.</p>
-		<p><a href="images/01b/setup032.png"><img src="images/01b/setup032.png" width="640" height="480" alt="Step 19" /></a></p>
-	</li>
-</ol>
-
-<p>At this point you may want to wait a few hours before continuing to the next step in order to let your node become fully connected to the network. Make sure your computer doesn't go into sleep or hibernation while Freenet is trying to connect to the network.</p>
-<p>When you are ready to continue it's time to setup the <a href="wot_en.html">Web of Trust</a> plugin.</p>
+	<h1>The newcomer's guide to anonymous communication on Freenet</h1>
+	<p>This is tutorial is designed for anyone who wants to use Freenet primarily for anonymous and censorship-resistant social networking and truly private email.</p>
+	<p>Some of the default settings for a Freenet install are not optimal for this usage and many of the steps are not documented anywhere so this is an attempt to bring all the information into one place.</p>
+	<p>Some of the plugins we will be using require more resources than what a typical installation of Freenet needs. You should have at least 2 GiB of memory on the computer you are using.</p>
+	<p>Use the navigation links on the right side of the screen to get started.</p>
+	<div class="container">
+		<div class="boxhead">
+			<h2>News</h2>
+		</div>
+		<div class="innerbox">
+		<!--  hack necessary because putting padding and width: 100% on the same element confuses firefox & konqueror (at least)  -->
+		<div class="innerinnerbox">
+			<h3>Monday, 24th June, 2013</h3><p>Updated FMS version.</p>
+			<p>Current software versions:</p>
+			<ul>
+				<li>Freenet: 1444</li>
+				<li>WebOfTrust: 12</li>
+				<li>Freemail: 0.2.2.1</li>
+				<li>Sone: 0.8.4</li>
+				<li>FMS: 0.3.71</li>
+				<li>FLIP: 0.1.7</li>
+				<li>Thunderbird: 13</li>
+				<li>KVIrc: 4.2.0</li>
+				<li>Gpg4win 2.1.1</li>
+			</ul>
+		</div>
+		</div>
+		<div class="innerbox">
+		<!--  hack necessary because putting padding and width: 100% on the same element confuses firefox & konqueror (at least)  -->
+		<div class="innerinnerbox">
+			<h3>Thursday, 14th February, 2013</h3><p>Merged changes and updated <a href="contact_en.html">contact</a> page to thank recent contributors for their help with this guide.</p>
+			<p>Current software versions:</p>
+			<ul>
+				<li>Freenet: 1433</li>
+				<li>WebOfTrust: 12</li>
+				<li>Freemail: 0.2.2.1</li>
+				<li>Sone: 0.8.4</li>
+				<li>FMS: 0.3.70</li>
+				<li>FLIP: 0.1.7</li>
+				<li>Thunderbird: 13</li>
+				<li>KVIrc: 4.2.0</li>
+				<li>Gpg4win 2.1.1</li>
+			</ul>
+		</div>
+		</div>
+		<div class="innerbox">
+		<!--  hack necessary because putting padding and width: 100% on the same element confuses firefox & konqueror (at least)  -->
+		<div class="innerinnerbox">
+			<h3>Tuesday, 5th February, 2013</h3><p>Another day, another new version of FLIP.</p>
+			<p>Current software versions:</p>
+			<ul>
+				<li>Freenet: 1432</li>
+				<li>WebOfTrust: 12</li>
+				<li>Freemail: 0.2.2.1</li>
+				<li>Sone: 0.8.4</li>
+				<li>FMS: 0.3.70</li>
+				<li>FLIP: 0.1.7</li>
+				<li>Thunderbird: 13</li>
+				<li>KVIrc: 4.2.0</li>
+				<li>Gpg4win 2.1.1</li>
+			</ul>
+		</div>
+		</div>
+		<div class="innerbox">
+		<div class="innerinnerbox">
+			<p><a href="news_en.html">Old news</a></p>
+		</div>
+		</div>
+	</div>
 </div>
 
 <br clear="both" />

@@ -1,11 +1,11 @@
 ﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN">
 <html xml:lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text_en.html; charset=utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 <link rel="stylesheet" href="fsng.css" type="text/css" />
 <link href="favicon.png" type="image/png" />
-	<title>Freenet Social Networking Guide - Step 2</title>
+	<title>Freenet Social Networking Guide</title>
 	</head>
 <body>
 <div id="logo">
@@ -15,7 +15,7 @@
 </div>
 
 <div id="breadcrumbs">
-<p>Step 2</p>
+<p>Home</p>
 </div>
 
 <div id="navbar"><center><b>Main Series</b></center>
@@ -35,7 +35,7 @@
 		<li class="nav1"><a href="fms_en.html" title="Step 5: Forums">
 			Step 5: Forums</a>
 		</li>
-		<li class="nav1"><a title="Step 6: Chat">
+		<li class="nav1"><a href="flip_en.html" title="Step 6: Chat">
 			Step 6: Chat</a>
 		</li>
 	</ul>
@@ -58,49 +58,75 @@
 </div>
 
 <div id="content">
-	<h1>Step 2: Creating an anonymous identity with the WebOfTrust</h1>
-	<p>The WebOfTrust plugin (WoT) is how the various communication plugins solve the problem of spam on an uncensorable medium.</p>
-	<p>WoT-enabled plugins will use a distributed trust system to choose which identities to download messages from. When you or someone in your trust network marks down a spammer the spammer's trust score will drop. When it is sufficiently low your node, and other people who have you in their trust network, will no longer downloaded messages from that identity.</p>
-	<p>This allows spammers to be ostracized when they can't be stopped from posting. Of course not everybody will agree what does or does not constitute spam. This is why every identity has its own trust list to mark other identities as they see fit.</p>
-	<p>Since WoT is a prerequisite for many other plugins it will be installed first.</p>
-	<ol>
-		<li><p>Starting from your node's home page go to the Plugins menu under Configuration.</p>
-			<p><a href="images/02/setup001.png"><img src="images/02/setup001.png" width="640" height="480" alt="Step 1" /></a></p>
-		</li>
-		<li><p>Load the official WebOfTrust plugin.</p>
-			<p><a href="images/02/setup002.png"><img src="images/02/setup002.png" width="640" height="480" alt="Step 2" /></a></p>
-		</li>
-		<li><p>When the plugin has finished downloading click on the 'Own anonymous identities' option under the Community menu.</p>
-			<p><a href="images/02/setup003.png"><img src="images/02/setup003.png" width="640" height="480" alt="Step 3" /></a></p>
-		</li>
-		<li><p>Freenet will automatically generate a random name for your new identity. You can refresh the page to get a new identity, however for maximum anonymity it's best to use the first one that shows up. If you create many identities and only choose names that sound good to you this can create a pattern that makes it easier to link your different identities.</p>
-			<p>When you have a name you are satisfied with click 'Create'.
-			<p><a href="images/02/setup004.png"><img src="images/02/setup004.png" width="640" height="480" alt="Step 4" /></a></p>
-		</li>
-		<li><p>The two boxes full of random characters contain the public and private keys of your identity. Take the time now to copy this information to a file and store it somewhere safe in case something happens to your node. If possible, encrypt the file to prevent anyone from discovering your private key.</p>
-			<p>If you don't copy the two URIs now and want to do it later click on the 'Edit' button for the identity on the "Own anonymous identities" page.
-			<p>When you are done click 'Create it'.
-			<p><a href="images/02/setup005.png"><img src="images/02/setup005.png" width="640" height="480" alt="Step 5" /></a></p>
-		</li>
-		<li><p>After the identity is created go back to Own anonymous identities.</p>
-			<p><a href="images/02/setup006.png"><img src="images/02/setup006.png" width="640" height="480" alt="Step 6" /></a></p>
-		</li>
-		<li><p>The final step needed to make other people see your posts is to introduce the identity.</p>
-			<p><a href="images/02/setup007.png"><img src="images/02/setup007.png" width="640" height="480" alt="Step 7" /></a></p>
-			</li>
-		<li><p>Unfortunately you'll need to wait some time for the WoT plugin to download introduction puzzles. You should have some puzzles to solve after an hour or two but for best performance let the node run overnight to download identities and come back to this step tomorrow.</p>
-			<p>You can also skip the introduction and continue on to setting up Freemail and Sone but remember to come back and introduce at some point or else nobody will see any of your posts. The disadvantage not waiting for the WoT to finish bootstrapping is that it will take longer if Sone is also trying to bootstrap at the same time.
-			<p><a href="images/02/setup008.png"><img src="images/02/setup008.png" width="640" height="480" alt="Step 8" /></a></p>
-		</li>
-		<li><p>After waiting a sufficient amount of time for the WoT to finish downloading identities go back to the introduction page. Now you should have a page full of puzzles to solve. Follow the instructions on the screen and click 'Submit'.</p>
-			<p><a href="images/02/setup009.png"><img src="images/02/setup009.png" width="640" height="480" alt="Step 9" /></a></p>
-			</li>
-		<li><p>After you've solved about 10 puzzles it's just a matter of waiting for the other identities to recognize you. When the number of Trusters changes to something greater than zero your identity has been successfully introduced. You should try to get at least 5 Trusters, so if necessary repeat the introduction process.</p>
-			<p><a href="images/02/setup010.png"><img src="images/02/setup010.png" width="640" height="480" alt="Step 10" /></a></p>
-		</li>
-	</ol>
-
-	<p>Once your identity has been successfully introduced the next step is to get a <a href="freemail_en.html">Freemail</a> account.</p>
+	<h1>The newcomer's guide to anonymous communication on Freenet</h1>
+	<p>This is tutorial is designed for anyone who wants to use Freenet primarily for anonymous and censorship-resistant social networking and truly private email.</p>
+	<p>Some of the default settings for a Freenet install are not optimal for this usage and many of the steps are not documented anywhere so this is an attempt to bring all the information into one place.</p>
+	<p>Some of the plugins we will be using require more resources than what a typical installation of Freenet needs. You should have at least 2 GiB of memory on the computer you are using.</p>
+	<p>Use the navigation links on the right side of the screen to get started.</p>
+	<div class="container">
+		<div class="boxhead">
+			<h2>News</h2>
+		</div>
+		<div class="innerbox">
+		<!--  hack necessary because putting padding and width: 100% on the same element confuses firefox & konqueror (at least)  -->
+		<div class="innerinnerbox">
+			<h3>Monday, 24th June, 2013</h3><p>Updated FMS version.</p>
+			<p>Current software versions:</p>
+			<ul>
+				<li>Freenet: 1444</li>
+				<li>WebOfTrust: 12</li>
+				<li>Freemail: 0.2.2.1</li>
+				<li>Sone: 0.8.4</li>
+				<li>FMS: 0.3.71</li>
+				<li>FLIP: 0.1.7</li>
+				<li>Thunderbird: 13</li>
+				<li>KVIrc: 4.2.0</li>
+				<li>Gpg4win 2.1.1</li>
+			</ul>
+		</div>
+		</div>
+		<div class="innerbox">
+		<!--  hack necessary because putting padding and width: 100% on the same element confuses firefox & konqueror (at least)  -->
+		<div class="innerinnerbox">
+			<h3>Thursday, 14th February, 2013</h3><p>Merged changes and updated <a href="contact_en.html">contact</a> page to thank recent contributors for their help with this guide.</p>
+			<p>Current software versions:</p>
+			<ul>
+				<li>Freenet: 1433</li>
+				<li>WebOfTrust: 12</li>
+				<li>Freemail: 0.2.2.1</li>
+				<li>Sone: 0.8.4</li>
+				<li>FMS: 0.3.70</li>
+				<li>FLIP: 0.1.7</li>
+				<li>Thunderbird: 13</li>
+				<li>KVIrc: 4.2.0</li>
+				<li>Gpg4win 2.1.1</li>
+			</ul>
+		</div>
+		</div>
+		<div class="innerbox">
+		<!--  hack necessary because putting padding and width: 100% on the same element confuses firefox & konqueror (at least)  -->
+		<div class="innerinnerbox">
+			<h3>Tuesday, 5th February, 2013</h3><p>Another day, another new version of FLIP.</p>
+			<p>Current software versions:</p>
+			<ul>
+				<li>Freenet: 1432</li>
+				<li>WebOfTrust: 12</li>
+				<li>Freemail: 0.2.2.1</li>
+				<li>Sone: 0.8.4</li>
+				<li>FMS: 0.3.70</li>
+				<li>FLIP: 0.1.7</li>
+				<li>Thunderbird: 13</li>
+				<li>KVIrc: 4.2.0</li>
+				<li>Gpg4win 2.1.1</li>
+			</ul>
+		</div>
+		</div>
+		<div class="innerbox">
+		<div class="innerinnerbox">
+			<p><a href="news_en.html">Old news</a></p>
+		</div>
+		</div>
+	</div>
 </div>
 
 <br clear="both" />
